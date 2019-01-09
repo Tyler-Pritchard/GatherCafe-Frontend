@@ -1,46 +1,21 @@
-import React, { Component } from "react";
-import { Form } from "semantic-ui-react";
+import React from "react";
+import { Card, Image } from "semantic-ui-react";
 
-class Item extends Component {
-  state = { name: "", email: "", submittedName: "", submittedEmail: "" };
-
-  handleChange = (e, { name, value }) => this.setState({ [name]: value });
-
-  handleSubmit = () => {
-    const { name, email } = this.state;
-
-    this.setState({ submittedName: name, submittedEmail: email });
-  };
-
-  render() {
-    const { name, email, submittedName, submittedEmail } = this.state;
-
-    return (
-      <div>
-        <Form onSubmit={this.handleSubmit}>
-          <Form.Group>
-            <Form.Input
-              placeholder="Name"
-              name="name"
-              value={name}
-              onChange={this.handleChange}
-            />
-            <Form.Input
-              placeholder="Email"
-              name="email"
-              value={email}
-              onChange={this.handleChange}
-            />
-            <Form.Button content="Submit" />
-          </Form.Group>
-        </Form>
-        <strong>onChange:</strong>
-        <pre>{JSON.stringify({ name, email }, null, 2)}</pre>
-        <strong>onSubmit:</strong>
-        <pre>{JSON.stringify({ submittedName, submittedEmail }, null, 2)}</pre>
-      </div>
-    );
-  }
-}
+const Item = props => {
+  console.log(props);
+  let { name, description, price, photo_url } = props.item;
+  return !props.item ? null : (
+    <div>
+      <Card>
+        <Image src={photo_url} />
+        <Card.Content>
+          <Card.Header>{name}</Card.Header>
+          <Card.Meta>{price}</Card.Meta>
+          <Card.Description>{description}</Card.Description>
+        </Card.Content>
+      </Card>
+    </div>
+  );
+};
 
 export default Item;
