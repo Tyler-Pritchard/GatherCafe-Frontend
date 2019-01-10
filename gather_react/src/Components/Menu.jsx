@@ -2,11 +2,6 @@ import React from "react";
 import { Button, Image, List } from "semantic-ui-react";
 
 class Menu extends React.Component {
-  // async componentDidMount() {
-  //   let menusJSON = await fetch("http://localhost:5000/menus");
-  //   let menus = await menusJSON.json();
-  //   console.log(menus);
-  // }
   render() {
     return (
       <List divided verticalAlign="middle">

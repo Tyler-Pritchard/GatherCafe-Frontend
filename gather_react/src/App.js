@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import "./App.css";
 import Navbar from "./common/Navbar";
 import Footer from "./common/Footer";
@@ -14,9 +14,10 @@ class App extends Component {
       <Router>
         <div>
           <Navbar />
-          <Menu />
-          <ItemsList />
+          <Route exact path="/" component={() => <Redirect to="/items" />} />
           <Route exact path="/login" component={() => <Login />} />
+          <Route exact path="/menu" component={() => <Menu />} />
+          <Route exact path="/items" component={() => <ItemsList />} />
           <Route exact path="/userprofile" component={() => <UserProfile />} />
           <Footer />
         </div>
