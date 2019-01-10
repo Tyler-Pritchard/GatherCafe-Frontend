@@ -11,14 +11,14 @@ class Menu extends React.Component {
     return (
       <List divided verticalAlign="middle">
         <List.Item>
-          <List.Content floated="right">
+          {/* <List.Content floated="right">
             <Button>Add</Button>
           </List.Content>
           <Image avatar src="/images/avatar/small/lena.png" />
           <List.Content>Item</List.Content>
           <List.Content>$Price</List.Content>
           <List.Content>Description</List.Content>
-          {/* addon checkbox */}
+          addon checkbox */}
         </List.Item>
       </List>
     );

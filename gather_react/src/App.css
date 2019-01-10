@@ -1,26 +1,37 @@
 body {
-  background-color: grey !important;
+  background-color:
+    black !important;
+}
+
+Button {
+  background-color: #E28C05 !important;
+  color: white !important;
 }
 
 a {
-  color: orange !important;
+  color: black !important;
+}
+
+.content {
+  background-color: #ABA387 !important;
 }
 
 #menuCard {
-  background-color: orange !important;
+  background-color: #E28C05 !important;
 }
 
 #navbar {
-  background-color: black !important;
+  background-color: #E28C05 !important;
   margin-bottom: 2em;
-  color: orange;
+  color: black;
 
 }
 
 #footer {
-  background-color: black !important;
+  background-color: #ABA387 !important;
   margin-top: 2em;
-  color: orange !important;
+  color: black !important;
+  text-align: center;
 }
 
 #submitOrderButtons {

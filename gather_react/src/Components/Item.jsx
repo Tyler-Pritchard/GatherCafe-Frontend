@@ -1,18 +1,19 @@
 import React from "react";
-import { Card, Image } from "semantic-ui-react";
+import { Card, Image, Button } from "semantic-ui-react";
 
 const Item = props => {
   console.log(props);
-  let { name, description, price, photo_url } = props.item;
+  let { name, description, price, image_url } = props.item;
   return !props.item ? null : (
     <div>
-      <Card>
-        <Image src={photo_url} />
+      <Card fluid link raised>
+        <Image src={image_url} />
         <Card.Content>
           <Card.Header>{name}</Card.Header>
-          <Card.Meta>{price}</Card.Meta>
           <Card.Description>{description}</Card.Description>
+          <Card.Meta>{price}</Card.Meta>
         </Card.Content>
+        <Button>Add</Button>
       </Card>
     </div>
   );

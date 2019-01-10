@@ -7,7 +7,10 @@ const Cart = () => (
       <List.Content floated="right">
         <Button>Remove</Button>
       </List.Content>
-      <Image avatar src="/images/avatar/small/lena.png" />
+      <Image
+        avatar
+        src="../../../Galvanize Logo - Text & Logo  2/Galvanize---Galvanize-Logo---Text-_-Logo.png"
+      />
       <List.Content>Item</List.Content>
       <List.Content>$Price</List.Content>
     </List.Item>

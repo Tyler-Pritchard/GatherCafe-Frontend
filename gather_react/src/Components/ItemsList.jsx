@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import Item from "./Item";
+import { Container } from "semantic-ui-react";
 class ItemsList extends React.Component {
   render() {
     console.log(this.props);
@@ -9,7 +10,7 @@ class ItemsList extends React.Component {
       : this.props.items.map(item => {
           return <Item item={item} />;
         });
-    return <div>{itemsArray}</div>;
+    return <Container text>{itemsArray}</Container>;
   }
 }
 const mapStateToProps = state => {

@@ -24,7 +24,7 @@ export class Navbar extends Component {
           <Link to="/cart">Cart</Link>
         </Menu.Item>
         <Container>
-          <h1 id="navHead">G@TH3R</h1>
+          <h1 id="navHead">GATHER CAFE @galvanize</h1>
         </Container>
         <Menu.Item
           name="UserProfileForm"
