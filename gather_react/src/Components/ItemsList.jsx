@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import Item from "./Item";
-import { Containter, Container } from "semantic-ui-react";
+import { Container } from "semantic-ui-react";
 class ItemsList extends React.Component {
   render() {
     console.log(this.props);
