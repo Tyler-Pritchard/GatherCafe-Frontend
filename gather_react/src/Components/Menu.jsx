@@ -1,23 +1,21 @@
 import React from "react";
-import { Button, Image, List } from "semantic-ui-react";
+import { Card, Image, Button } from "semantic-ui-react";
 
-class Menu extends React.Component {
-  render() {
-    return (
-      <List divided verticalAlign="middle">
-        <List.Item>
-          {/* <List.Content floated="right">
-            <Button>Add</Button>
-          </List.Content>
-          <Image avatar src="/images/avatar/small/lena.png" />
-          <List.Content>Item</List.Content>
-          <List.Content>$Price</List.Content>
-          <List.Content>Description</List.Content>
-          addon checkbox */}
-        </List.Item>
-      </List>
-    );
-  }
-}
+const Menu = props => {
+  console.log(props);
+  let { name, description, image_url } = props.menu;
+  return !props.menu ? null : (
+    <div>
+      <Card fluid link raised>
+        <Image src={image_url} />
+        <Card.Content>
+          <Card.Header>{name}</Card.Header>
+          <Card.Description>{description}</Card.Description>
+        </Card.Content>
+        <Button>{name}</Button>
+      </Card>
+    </div>
+  );
+};
 
 export default Menu;
