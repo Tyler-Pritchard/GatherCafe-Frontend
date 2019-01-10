@@ -14,6 +14,7 @@ class App extends Component {
       <Router>
         <div>
           <Navbar />
+          {/* change to menu list/index */}
           <Route exact path="/" component={() => <Redirect to="/items" />} />
           <Route exact path="/login" component={() => <Login />} />
           <Route exact path="/menu" component={() => <Menu />} />

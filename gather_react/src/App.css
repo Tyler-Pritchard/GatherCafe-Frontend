@@ -24,7 +24,6 @@ a {
   background-color: #E28C05 !important;
   margin-bottom: 2em;
   color: black;
-
 }
 
 #footer {
@@ -36,4 +35,9 @@ a {
 
 #submitOrderButtons {
   margin-top: 2em;
+}
+
+#navHead {
+  padding: auto !important;
+  margin: auto !important;
 }
