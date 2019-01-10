@@ -9,29 +9,13 @@ import Login from "./Components/Login";
 import UserProfile from "./Components/UserProfile";
 
 class App extends Component {
-  //******************STATE********************* */
-  state = {
-    menu: [],
-    items: []
-  };
-
-  async componentDidMount() {
-    const itemsJSON = await fetch(`http://localhost:5000/items`);
-    const items = await itemsJSON.json();
-    console.log("hey");
-    this.setState({
-      // menus: menu,
-      ...items
-    });
-  }
-
   render() {
     return (
       <Router>
         <div>
           <Navbar />
           <Menu />
-          <ItemsList items={this.state.items} />
+          <ItemsList />
           <Route exact path="/login" component={() => <Login />} />
           <Route exact path="/userprofile" component={() => <UserProfile />} />
           <Footer />
