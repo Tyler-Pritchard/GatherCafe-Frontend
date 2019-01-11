@@ -13,7 +13,6 @@ class MenusList extends React.Component {
   }
 }
 const mapStateToProps = state => {
-  console.log(state.menus.data.menus, "TAASDLFASDFDS");
   return { menus: state.menus.data.menus };
 };
 export default connect(
