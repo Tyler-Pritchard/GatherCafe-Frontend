@@ -4,7 +4,6 @@ import Item from "./Item";
 import { Container } from "semantic-ui-react";
 class ItemsList extends React.Component {
   render() {
-    console.log(this.props);
     const itemsArray = !this.props.items
       ? []
       : this.props.items.map(item => {
@@ -14,7 +13,6 @@ class ItemsList extends React.Component {
   }
 }
 const mapStateToProps = state => {
-  console.log(state.items.data.items, "TAASDLFASDFDS");
   return { items: state.items.data.items };
 };
 export default connect(
