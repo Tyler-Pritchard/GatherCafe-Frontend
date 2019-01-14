@@ -12,6 +12,10 @@ a {
   color: black !important;
 }
 
+.itemCard {
+  margin: 2vh 0 2vh 0 !important;
+}
+
 .content {
   background-color: #ABA387 !important;
 }
