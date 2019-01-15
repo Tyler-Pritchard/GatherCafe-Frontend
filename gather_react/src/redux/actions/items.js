@@ -1,4 +1,6 @@
-import { actionTypes } from "/";
+import {
+  actionTypes
+} from "/";
 
 export const fetchItems = () => {
   return async dispatch => {

@@ -5,7 +5,7 @@ import {
 export const fetchMenus = () => {
     return async dispatch => {
         try {
-            const MENUSJSON = await fetch("http://localhost:5000/menus");
+            const menusJSON = await fetch("http://localhost:5000/menus");
             const menus = await menusJSON.json();
 
             dispatch({
