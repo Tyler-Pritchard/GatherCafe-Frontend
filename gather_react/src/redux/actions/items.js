@@ -5,7 +5,7 @@ import {
 export const fetchItems = () => {
   return async dispatch => {
     try {
-      const itemsJSON = await fetch("http://localhost:5000/items");
+      const itemsJSON = await fetch("http://gather-cafe-backend.herokuapp.com/items");
       const items = await itemsJSON.json();
 
       dispatch({
