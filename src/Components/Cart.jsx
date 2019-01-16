@@ -48,6 +48,7 @@ class Cart extends Component {
               <Image avatar src={item.image_url} />
               <List.Content>{item.name}</List.Content>
               <List.Content>${item.price}</List.Content>
+              <List.Content>${item.quantity}</List.Content>
             </List.Item>
           );
         })}
