@@ -16,8 +16,8 @@ export class Footer extends Component {
         <button className="ui circular linkedin icon button">
           <i className="linkedin icon" />
         </button>
-        <button className="ui circular yelp icon button">
-          <i className="yelp icon" />
+        <button className="ui circular yelp  icon button">
+          <i className="yelp  icon" />
         </button>
       </div>
     );
