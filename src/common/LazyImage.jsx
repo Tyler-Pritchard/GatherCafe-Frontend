@@ -30,7 +30,6 @@ export default class LazyImage extends React.Component {
           <Loader active inline="centered" size={size} />
         </Visibility>
       );
-      return;
     }
     return <Image {...this.props} />;
   }
