@@ -8,10 +8,12 @@ export class Navbar extends Component {
     const activeItem = this.props.location.pathname;
     return (
       <Menu id="navbar">
-        <Image
-          src="https://s3-us-west-1.amazonaws.com/gather-menu/Galvanize---Galvanize-Logo---_G_-only.png"
-          className="navLogo"
-        />
+        <Link to="/">
+          <Image
+            src="https://s3-us-west-1.amazonaws.com/gather-menu/Galvanize---Galvanize-Logo---_G_-only.png"
+            className="navLogo"
+          />
+        </Link>
         <Menu.Item
           name="Menu"
           active={activeItem === "/"}
@@ -30,11 +32,13 @@ export class Navbar extends Component {
         <Container>
           <div className="navBarLogo">
             <h1 id="navHead">
-              GATHER CAFE @{" "}
-              <Image
-                src="https://s3-us-west-1.amazonaws.com/gather-menu/Galvanize---Galvanize-logomark---text-only-2.png"
-                className="galFullWord"
-              />
+              <Link to="/">
+                GATHER CAFE @{" "}
+                <Image
+                  src="https://s3-us-west-1.amazonaws.com/gather-menu/Galvanize---Galvanize-logomark---text-only-2.png"
+                  className="galFullWord"
+                />
+              </Link>
             </h1>
           </div>
         </Container>
