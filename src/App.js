@@ -7,6 +7,7 @@ import Login from "./Components/Login";
 import UserProfile from "./Components/UserProfile";
 import MenusList from "./Components/MenusList";
 import ItemsList from "./Components/ItemsList";
+import Cart from "./Components/Cart";
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
           <Route exact path="/menu" component={() => <MenusList />} />
           <Route exact path="/item" component={() => <ItemsList />} />
           <Route exact path="/userprofile" component={() => <UserProfile />} />
+          <Route exact path="/cart" component={Cart} />
           <Footer />
         </div>
       </Router>
