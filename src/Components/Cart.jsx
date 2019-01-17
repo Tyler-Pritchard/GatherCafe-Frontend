@@ -17,10 +17,6 @@ class Cart extends Component {
   };
 
   onToken = async token => {
-    let totalInCents = this.props.itemsInCart.reduce((acc, agg) => {
-      return acc + +agg.price;
-    }, 0);
-    console.log(token, totalInCents);
     const chargeJSON = await fetch("http://localhost:5000/stripeCharge", {
       method: "POST",
       headers: {

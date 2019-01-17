@@ -27,15 +27,7 @@ You'll need to install:
 ### Installing
 
 ```
-yarn add react react-dom
-yarn add --save react-router-dom
-yarn add gulp-yarn -D
-yarn create react-app elements-example
-yarn add react-stripe-elements
-yarn add semantic-ui-react
-yarn add --save react-redux
-yarn add --save redux-thunk
-yarn add --save redux-logger
+`npm run build`
 ```
 
 ## Running the tests
