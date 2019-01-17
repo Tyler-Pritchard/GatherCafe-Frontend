@@ -8,8 +8,37 @@ Button {
   color: white !important;
 }
 
+#footer h1 {
+  color: white;
+  margin-bottom: 0vh !important;
+}
+
+#footer h2 {
+  margin: 0px !important;
+}
+
+.galFullWord {
+  display: inline !important;
+  height: 80% !important;
+  width: 30% !important;
+  margin: 1vh 5vw 1vh 5vw;
+  background-color: black !important;
+  border-radius: 25px !important;
+}
+
 a {
   color: black !important;
+}
+
+.navLogo {
+  height: 80px !important;
+  width: 80px !important;
+  background-color: black !important;
+}
+
+.navBarLogo {
+  width: 100% !important;
+  text-align: center !important;
 }
 
 .itemCard {
@@ -27,7 +56,6 @@ a {
 #navbar {
   background-color: #E28C05 !important;
   margin-bottom: 2em;
-  color: black;
 }
 
 #footer {
@@ -38,7 +66,7 @@ a {
 }
 
 #submitOrderButtons {
-  margin-top: 2em;
+  margin-top: 2em !important;
 }
 
 #navHead {

@@ -1,68 +1,98 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Gather Cafe - Frontend API
 
-## Available Scripts
+Hello and welcome to Gather Cafe! This is the frontend repository for a graphic user interface intended to order food and beverages specifically from the Gather Cafe located in the Galvanize building at 44 Tehama Street in San Francisco, CA. It will display menus, generate orders, process payments, and place the orders with Gather Cafe. Cafe staff will then notify the user when the order has been processed and completed.
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+From the root folder of the application, run:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    yarn start
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+You'll need to install:
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    -react
+    -react-dom
+    -react-redux
+    -react-router-dom
+    -react-scripts
+    -react-stripe-checkout
+    -redux
+    -redux-logger
+    -redux-thunk
+    -semantic-ui-css
+    -semantic-ui-react
 
-### `npm run build`
+### Installing
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+`npm run build`
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Running the tests
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Successfully renders user registrations
+<img src ="https://s3.amazonaws.com/gather-screenshots-frontend/signup.png" alt="signup" height=400px width=600px />
 
-### `npm run eject`
+Successfully renders login forms
+<img src ="https://s3.amazonaws.com/gather-screenshots-frontend/login.png" alt="login" height=400px width=600px />
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Successfully renders menu items
+<img src ="https://s3.amazonaws.com/gather-screenshots-frontend/items.png" alt="get" height=400px width=600px />
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Successfully renders carts
+<img src ="https://s3.amazonaws.com/gather-screenshots-frontend/cart.png" alt="cart" height=400px width=600px />
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Successfully renders menu lists
+<img src ="https://s3.amazonaws.com/gather-screenshots-frontend/menu.png" alt="conf" height=400px width=600px />
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Successfully renders Stripe interfaces
+<img src ="https://s3.amazonaws.com/gather-screenshots/stripe_auth.png" alt="conf" height=400px width=600px />
 
-## Learn More
+<!-- ### And coding style tests
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Explain what these tests test and why
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+Give an example
+``` -->
+<!--
+## Deployment
 
-### Code Splitting
+Add additional notes about how to deploy this on a live system -->
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Built With
 
-### Analyzing the Bundle Size
+(\*) = New tech learned during development
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- [React.js](https://reactjs.org/) - The Javascript library used
+- [Redux](https://redux.js.org/) - JavaScript state container(\*)
+- [React Semantic UI](https://react.semantic-ui.com/) - React integration for Semantic UI
+- [Heroku](https://www.heroku.com/) - Server
+- [Stripe](https://stripe.com/) - Online payment processing(\*)
 
-### Making a Progressive Web App
+<!-- ## Contributing
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-### Advanced Configuration
+## Versioning
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). -->
 
-### Deployment
+## Author
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+- **Tyler Pritchard** - _Initial work_ - [website](https://tylerrobertpritchard.com)
 
-### `npm run build` fails to minify
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<!-- ## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details -->
+
+## Acknowledgments
+
+- Mansoor Baharamand, Lead Instructor
+- Carl Corsini, Assistant Instructor
+- Jack Chi, Consultant
+- Evin Sellin, Consultant

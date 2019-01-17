@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
-import { Menu, Container } from "semantic-ui-react";
+import { Menu, Container, Image } from "semantic-ui-react";
 
 export class Navbar extends Component {
   componentDidMount() {}
@@ -8,6 +8,12 @@ export class Navbar extends Component {
     const activeItem = this.props.location.pathname;
     return (
       <Menu id="navbar">
+        <Link to="/">
+          <Image
+            src="https://s3-us-west-1.amazonaws.com/gather-menu/Galvanize---Galvanize-Logo---_G_-only.png"
+            className="navLogo"
+          />
+        </Link>
         <Menu.Item
           name="Menu"
           active={activeItem === "/"}
@@ -24,7 +30,17 @@ export class Navbar extends Component {
           <Link to="/cart">Cart</Link>
         </Menu.Item>
         <Container>
-          <h1 id="navHead">GATHER CAFE @galvanize</h1>
+          <div className="navBarLogo">
+            <h1 id="navHead">
+              <Link to="/">
+                GATHER CAFE @{" "}
+                <Image
+                  src="https://s3-us-west-1.amazonaws.com/gather-menu/Galvanize---Galvanize-logomark---text-only-2.png"
+                  className="galFullWord"
+                />
+              </Link>
+            </h1>
+          </div>
         </Container>
         <Menu.Item
           name="UserProfileForm"
