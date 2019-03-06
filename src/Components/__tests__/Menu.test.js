@@ -16,4 +16,6 @@ it("shows a list of menu items", () => {
   const wrapped = mount(<Menu />);
 
   //TODO: expect menu items, add/delete buttons
+  //expect(wrapped.find("itemsList").length).toEqual(1);
+  //expect(wrapped.find("add buttons").length).toEqual(?????);
 });
