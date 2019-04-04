@@ -23,7 +23,7 @@ class Cart extends Component {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        amount: +totalInCents,
+        amount: totalInCents,
         token: token.id
       })
     });
