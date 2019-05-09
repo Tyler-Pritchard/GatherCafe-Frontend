@@ -23,10 +23,7 @@ export const fetchItems = () => {
   };
 };
 
-/**
- * Adds an Item to the Cart in Reducer
- * @param {Object} payload 
- */
+
 export const addItemToCart = payload => {
   return {
     type: 'ADD_ITEM_TO_CART',
@@ -34,10 +31,6 @@ export const addItemToCart = payload => {
   }
 }
 
-/**
- * Removes Item from Cart Reducer
- * @param {Object} payload 
- */
 export const removeItemInCart = payload => {
   return {
     type: 'REMOVE_ITEM_IN_CART',
