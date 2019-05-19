@@ -17,7 +17,7 @@ class Cart extends Component {
   };
 
   onToken = async token => {
-    const chargeJSON = await fetch("http://localhost:5000/stripeCharge", {
+    const chargeJSON = await fetch("https://localhost:5000/stripeCharge", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
