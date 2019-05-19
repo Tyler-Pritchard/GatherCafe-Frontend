@@ -8,6 +8,7 @@ import UserProfile from "./Components/UserProfile";
 import MenusList from "./Components/MenusList";
 import ItemsList from "./Components/ItemsList";
 import Cart from "./Components/Cart";
+import HomepageLayout from "./Components/HomePage";
 
 class App extends Component {
   render() {
@@ -15,12 +16,13 @@ class App extends Component {
       <Router>
         <div>
           <Navbar /> {/* change to menu list/index */}
-          <Route exact path="/" component={() => <Redirect to="/item" />} />
+          <Route exact path="/" component={() => <Redirect to="/homepage" />} />
           <Route exact path="/login" component={() => <Login />} />
           <Route exact path="/menu" component={() => <MenusList />} />
           <Route exact path="/item" component={() => <ItemsList />} />
           <Route exact path="/userprofile" component={() => <UserProfile />} />
           <Route exact path="/cart" component={Cart} />
+          <Route exact path="/homepage" component={() => <HomepageLayout />} />
           <Footer />
         </div>
       </Router>
