@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import "./App.css";
-import Navbar from "./common/Navbar";
-import Footer from "./common/Footer";
 import Login from "./Components/Login";
 import UserProfile from "./Components/UserProfile";
 import MenusList from "./Components/MenusList";
@@ -15,7 +13,6 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Navbar /> {/* change to menu list/index */}
           <Route exact path="/" component={() => <Redirect to="/homepage" />} />
           <Route exact path="/login" component={() => <Login />} />
           <Route exact path="/menu" component={() => <MenusList />} />
@@ -23,7 +20,6 @@ class App extends Component {
           <Route exact path="/userprofile" component={() => <UserProfile />} />
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/homepage" component={() => <HomepageLayout />} />
-          <Footer />
         </div>
       </Router>
     );
