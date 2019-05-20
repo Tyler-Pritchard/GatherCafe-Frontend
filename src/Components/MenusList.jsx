@@ -8,9 +8,17 @@ class MenusList extends React.Component {
     const menusArray = !this.props.menus
       ? []
       : this.props.menus.map(menu => {
-          return <Menu menu={menu} />;
+          return (
+            <div>
+              <Menu menu={menu} />
+            </div>
+          );
         });
-    return <Container text>{menusArray}</Container>;
+    return (
+      <div>
+        <Container text>{menusArray}</Container>
+      </div>
+    );
   }
 }
 const mapStateToProps = state => {
