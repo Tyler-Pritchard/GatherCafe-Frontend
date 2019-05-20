@@ -1,70 +1,3 @@
-// import React, { Component } from "react";
-// import { Link, withRouter } from "react-router-dom";
-// import { Menu, Container, Image } from "semantic-ui-react";
-
-// export class Navbar extends Component {
-//   componentDidMount() {}
-//   render() {
-//     const activeItem = this.props.location.pathname;
-//     return (
-//       <Menu id="navbar">
-//         <Link to="/">
-//           <Image
-//             src="https://s3-us-west-1.amazonaws.com/gather-menu/Galvanize---Galvanize-Logo---_G_-only.png"
-//             className="navLogo"
-//           />
-//         </Link>
-//         <Menu.Item
-//           name="Menu"
-//           active={activeItem === "/"}
-//           onClick={this.handleItemClick}
-//         >
-//           <Link to="/menu">Menu</Link>
-//         </Menu.Item>
-
-//         <Menu.Item
-//           name="Cart"
-//           active={activeItem === "/cart"}
-//           onClick={this.handleItemClick}
-//         >
-//           <Link to="/cart">Cart</Link>
-//         </Menu.Item>
-//         <Container>
-//           <div className="navBarLogo">
-//             <h1 id="navHead">
-//               <Link to="/">
-//                 GATHER CAFE @{" "}
-//                 <Image
-//                   src="https://s3-us-west-1.amazonaws.com/gather-menu/Galvanize---Galvanize-logomark---text-only-2.png"
-//                   className="galFullWord"
-//                 />
-//               </Link>
-//             </h1>
-//           </div>
-//         </Container>
-//         <Menu.Item
-//           name="UserProfileForm"
-//           active={activeItem === "/login"}
-//           onClick={this.handleItemClick}
-//         >
-//           <Link to="/login">Login</Link>
-//         </Menu.Item>
-//         <Menu.Item
-//           name="UserProfileForm"
-//           active={activeItem === "/signup"}
-//           onClick={this.handleItemClick}
-//         >
-//           <Link to="/userprofile">Sign Up</Link>
-//         </Menu.Item>
-//       </Menu>
-//     );
-//   }
-// }
-
-// export default withRouter(Navbar);
-
-//========================================//
-
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
@@ -72,12 +5,8 @@ import { Link, withRouter } from "react-router-dom";
 import {
   Button,
   Container,
-  Divider,
-  Grid,
-  Header,
   Icon,
   Image,
-  List,
   Menu,
   Responsive,
   Segment,
@@ -85,25 +14,12 @@ import {
   Visibility
 } from "semantic-ui-react";
 
-// Heads up!
-// We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
-// For more advanced usage please check Responsive docs under the "Usage" section.
 const getWidth = () => {
   const isSSR = typeof window === "undefined";
 
   return isSSR ? Responsive.onlyTablet.minWidth : window.innerWidth;
 };
 
-/* eslint-disable react/no-multi-comp */
-/* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
- * such things.
- */
-const HomepageHeading = ({ mobile }) => <Container text />;
-
-/* Heads up!
- * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
- * It can be more complicated, but you can create really flexible markup.
- */
 class DesktopContainer extends Component {
   state = {};
 
@@ -142,8 +58,12 @@ class DesktopContainer extends Component {
                 <Link to="/menu">Menu</Link>
               </Menu.Item>
 
-              <Menu.Item as="a">Company</Menu.Item>
-              <Menu.Item as="a">Careers</Menu.Item>
+              <Menu.Item>Catering</Menu.Item>
+
+              <Menu.Item>
+                <Link to="/cart">Cart</Link>
+              </Menu.Item>
+
               <Menu.Item position="right">
                 <Button as="a" inverted={!fixed}>
                   Log in
@@ -159,7 +79,6 @@ class DesktopContainer extends Component {
               </Menu.Item>
             </Container>
           </Menu>
-          <HomepageHeading />
         </Visibility>
 
         {children}
@@ -229,7 +148,6 @@ class MobileContainer extends Component {
                 </Menu.Item>
               </Menu>
             </Container>
-            <HomepageHeading mobile />
           </Segment>
 
           {children}
@@ -254,5 +172,5 @@ ResponsiveContainer.propTypes = {
   children: PropTypes.node
 };
 
-const HomepageLayout = () => <ResponsiveContainer />;
-export default HomepageLayout;
+const Navbar = () => <ResponsiveContainer />;
+export default Navbar;
