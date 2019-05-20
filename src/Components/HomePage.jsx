@@ -37,7 +37,7 @@ const HomepageHeading = ({ mobile }) => (
     />
     <Header
       as="h2"
-      content="What can we get for you?"
+      content="What are you hungry for?"
       inverted
       style={{
         fontSize: mobile ? "1.5em" : "1.7em",
