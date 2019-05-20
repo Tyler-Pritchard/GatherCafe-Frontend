@@ -27,12 +27,12 @@ Button {
 }
 
 a {
-  color: black !important;
+  color: E28C05 !important;
 }
 
 .navLogo {
-  height: 80px !important;
-  width: 80px !important;
+  height: 9vh !important;
+  width: 5vw !important;
   background-color: black !important;
 }
 
