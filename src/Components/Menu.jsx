@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import { Card, Button } from "semantic-ui-react";
 
 const Menu = props => {
-  //TODO URL NOT BEING PASSED
-  console.log(props, "YO HERE BE MY PROPS");
-  let { name, url } = props.menu;
+  let { name } = props.menu;
+  console.log(props, "THESE ARE THE MENU PROPS");
 
   return !props.menu ? null : (
     <div>
@@ -13,9 +12,7 @@ const Menu = props => {
         <Card.Content>
           <Card.Header>{name}</Card.Header>
         </Card.Content>
-        <Button>
-          <Link to={{ url }}>{name}</Link>
-        </Button>
+        <Button>{name}</Button>
       </Card>
     </div>
   );
