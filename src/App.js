@@ -8,6 +8,7 @@ import ItemsList from "./Components/ItemsList";
 import Cart from "./Components/Cart";
 import HomepageLayout from "./Components/HomePage";
 import Navbar from "./common/Navbar";
+import Footer from "./common/Footer";
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
           <Route exact path="/userprofile" component={() => <UserProfile />} />
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/homepage" component={() => <HomepageLayout />} />
+          <Footer />
         </div>
       </Router>
     );
