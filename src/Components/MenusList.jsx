@@ -1,8 +1,14 @@
 import React from "react";
 import { connect } from "react-redux";
 import Menu from "./Menu";
+import Navbar from "../common/Navbar/index";
 import { Container } from "semantic-ui-react";
+
 class MenusList extends React.Component {
+  render() {
+    return <div>{Navbar}</div>;
+  }
+
   render() {
     const menusArray = !this.props.menus
       ? []

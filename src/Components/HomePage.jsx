@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
+import { Link, withRouter } from "react-router-dom";
+
 import {
   Button,
   Container,
@@ -98,10 +100,19 @@ class DesktopContainer extends Component {
               size="large"
             >
               <Container>
-                <Menu.Item as="a" active>
-                  Home
+                <Menu.Item>
+                  <Link to="/">
+                    <Image
+                      src="https://s3-us-west-1.amazonaws.com/gather-menu/Galvanize---Galvanize-Logo---_G_-only.png"
+                      className="navLogo"
+                    />
+                  </Link>
                 </Menu.Item>
-                <Menu.Item as="a">Work</Menu.Item>
+
+                <Menu.Item>
+                  <Link to="/menu">Menu</Link>
+                </Menu.Item>
+
                 <Menu.Item as="a">Company</Menu.Item>
                 <Menu.Item as="a">Careers</Menu.Item>
                 <Menu.Item position="right">

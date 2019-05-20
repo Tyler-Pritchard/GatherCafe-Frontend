@@ -7,12 +7,14 @@ import MenusList from "./Components/MenusList";
 import ItemsList from "./Components/ItemsList";
 import Cart from "./Components/Cart";
 import HomepageLayout from "./Components/HomePage";
+import Navbar from "./common/Navbar";
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div>
+          <Navbar />
           <Route exact path="/" component={() => <Redirect to="/homepage" />} />
           <Route exact path="/login" component={() => <Login />} />
           <Route exact path="/menu" component={() => <MenusList />} />
