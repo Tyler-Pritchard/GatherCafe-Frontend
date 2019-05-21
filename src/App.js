@@ -19,7 +19,7 @@ class App extends Component {
           <Route exact path="/" component={() => <Redirect to="/homepage" />} />
           <Route exact path="/login" component={() => <Login />} />
           <Route exact path="/menu" component={() => <MenusList />} />
-          <Route exact path={`${ItemsList}`} component={() => <ItemsList />} />
+          <Route exact path="/item" component={() => <ItemsList />} />
           <Route exact path="/userprofile" component={() => <UserProfile />} />
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/homepage" component={() => <HomepageLayout />} />

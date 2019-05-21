@@ -12,7 +12,7 @@ class MenusList extends React.Component {
           console.log(this.props, "HERE ARE THE PROPS");
           return (
             <div>
-              <Link to={`/itemlist/${menu.name}`}>
+              <Link to={`${menu.name}`}>
                 <Menu menu={menu} />
               </Link>
             </div>

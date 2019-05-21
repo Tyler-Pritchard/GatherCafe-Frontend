@@ -5,6 +5,8 @@ import { Container } from "semantic-ui-react";
 import { addItemToCart, removeItemInCart } from "../redux/actions/items";
 
 class ItemsList extends React.Component {
+  state = { name: null, menu_id: null };
+
   addItemToCart = item => {
     this.props.addItemToCart(item);
   };
@@ -14,15 +16,18 @@ class ItemsList extends React.Component {
   };
 
   render() {
+    console.log(this.props, "THESE ARE THE ITEM LIST PROPS");
     const itemsArray = this.props.items.map(item => {
-      return (
-        <Item
-          key={item.name}
-          item={item}
-          add={this.addItemToCart}
-          remove={this.removeItemInCart}
-        />
-      );
+      if (item.menu_id === this.props.menu_id) {
+        return (
+          <Item
+            key={item.name}
+            item={item}
+            add={this.addItemToCart}
+            remove={this.removeItemInCart}
+          />
+        );
+      }
     });
     return <Container text>{itemsArray}</Container>;
   }
