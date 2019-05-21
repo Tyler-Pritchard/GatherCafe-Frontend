@@ -15,14 +15,18 @@ class ItemsList extends React.Component {
 
   render() {
     const itemsArray = this.props.items.map(item => {
-      return (
-        <Item
-          key={item.name}
-          item={item}
-          add={this.addItemToCart}
-          remove={this.removeItemInCart}
-        />
-      );
+      console.log(item, "THESE ARE THE ITEM PROPS");
+      console.log(this.state, "these are the prosp");
+      if (item.menu_id == this.props.meal) {
+        return (
+          <Item
+            key={item.name}
+            item={item}
+            add={this.addItemToCart}
+            remove={this.removeItemInCart}
+          />
+        );
+      }
     });
     return <Container text>{itemsArray}</Container>;
   }

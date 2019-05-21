@@ -1,21 +1,14 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
-import { Link, withRouter } from "react-router-dom";
 
 import {
-  Button,
   Container,
-  Divider,
   Grid,
   Header,
-  Icon,
-  Image,
   List,
-  Menu,
   Responsive,
   Segment,
-  Sidebar,
-  Visibility
+  Sidebar
 } from "semantic-ui-react";
 
 const getWidth = () => {
