@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import GoogleAuth from "../../Components/GoogleAuth";
 
 import {
   Button,
@@ -76,6 +77,9 @@ class DesktopContainer extends Component {
                   <Link to="/userprofile">Sign Up</Link>
                 </Button>
               </Menu.Item>
+              <Menu.Item position="right">
+                <GoogleAuth />
+              </Menu.Item>
             </Container>
           </Menu>
         </Visibility>
@@ -144,6 +148,9 @@ class MobileContainer extends Component {
                   <Button as="a" inverted style={{ marginLeft: "0.5em" }}>
                     Sign Up
                   </Button>
+                </Menu.Item>
+                <Menu.Item position="right">
+                  <GoogleAuth />
                 </Menu.Item>
               </Menu>
             </Container>
