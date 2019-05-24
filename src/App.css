@@ -1,4 +1,5 @@
 body {
+  border: 3px dotted;
   background-color:
     black !important;
 }
@@ -8,39 +9,55 @@ Button {
   color: white !important;
 }
 
-#footer h1 {
-  color: white;
-  margin-bottom: 0vh !important;
-}
-
-#footer h2 {
-  margin: 0px !important;
-}
-
-.galFullWord {
-  display: inline !important;
-  height: 80% !important;
-  width: 30% !important;
-  margin: 1vh 5vw 1vh 5vw;
-  background-color: black !important;
-  border-radius: 25px !important;
-}
 
 a {
-  color: E28C05 !important;
+  color: #a0470e !important;
+  text-decoration-style: double;
+  font-size: large !important;
+  font-weight: bold;
 }
 
-.navLogo {
-  height: 8vh !important;
-  width: 7vw !important;
+#navLogo {
+  border: 1px solid red;
+  height: 20vh;
+  margin-right: 0.5em;
   background-color: black !important;
 }
 
-.navBarLogo {
-  width: 100% !important;
-  text-align: center !important;
+#navbar {
+  border: 2px solid blue;
+  background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/gather-banner1.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1em;
 }
 
+#navContainer {
+  border: 1px solid black;
+  width: 97%;
+  justify-contentz: center !important;
+}
+
+
+#navbarMobile {
+  background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/gather-banner1.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1em;
+}
+
+.navLogoMobile {
+  width: 5%;
+  background-color: black !important;
+}
+
+#navSideBar {
+  background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe4.jpg") !important;
+  filter: blur(2px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1em;
+}
 
 .itemCard {
   margin: 2vh 0 2vh 0 !important;
@@ -54,13 +71,6 @@ a {
   background-color: #E28C05 !important;
 }
 
-#navbar {
-  background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/gather-banner1.jpg") !important;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 2em;
-}
-
 #footer {
   background-color: #ABA387 !important;
   margin-top: 2em;
@@ -70,9 +80,4 @@ a {
 
 #submitOrderButtons {
   margin-top: 2em !important;
-}
-
-#navHead {
-  padding: auto !important;
-  margin: auto !important;
 }
