@@ -1,6 +1,6 @@
 body {
-  background-color:
-    black !important;
+  border: 3px dotted;
+  background-color: black;
 }
 
 Button {
@@ -8,37 +8,61 @@ Button {
   color: white !important;
 }
 
-#footer h1 {
-  color: white;
-  margin-bottom: 0vh !important;
-}
-
-#footer h2 {
-  margin: 0px !important;
-}
-
-.galFullWord {
-  display: inline !important;
-  height: 80% !important;
-  width: 30% !important;
-  margin: 1vh 5vw 1vh 5vw;
-  background-color: black !important;
-  border-radius: 25px !important;
-}
 
 a {
-  color: E28C05 !important;
+  color: #a0470e !important;
+  text-decoration-style: double;
+  font-size: large !important;
+  font-weight: bold;
 }
 
-.navLogo {
-  height: 9vh !important;
-  width: 5vw !important;
+
+#navbar {
+  border: 2px solid blue;
+  background-color:
+    black !important;
+}
+
+#navContainer {
+  border: 1px solid black;
+  width: 97%;
+  position: relative;
+}
+
+#navLogo {
+  border: 1px solid red;
+  height: 20vh;
+  margin: auto 0.5em auto 0.5em;
+  background-color: black !important;
+  vertical-align: middle;
+
+}
+
+#navItem {
+  border: 1px solid black;
+  height: 20vh;
+  margin: auto 0.5em auto 0.5em;
+  vertical-align: middle;
+}
+
+#navbarMobile {
+  background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/gather-banner1.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1em;
+}
+
+.navLogoMobile {
+  width: 5%;
   background-color: black !important;
 }
 
-.navBarLogo {
-  width: 100% !important;
-  text-align: center !important;
+#navSideBar {
+  background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe4.jpg") !important;
+  filter: blur(2px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1em;
 }
 
 .itemCard {
@@ -53,11 +77,6 @@ a {
   background-color: #E28C05 !important;
 }
 
-#navbar {
-  background-color: #E28C05 !important;
-  margin-bottom: 2em;
-}
-
 #footer {
   background-color: #ABA387 !important;
   margin-top: 2em;
@@ -69,7 +88,21 @@ a {
   margin-top: 2em !important;
 }
 
-#navHead {
-  padding: auto !important;
-  margin: auto !important;
+#homePage {
+  border: 1px solid blue;
+  background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe1.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 97%;
+  position: relative;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 1.5em;
+}
+
+#homeBackground {
+  background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe2.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }

@@ -39,33 +39,36 @@ class DesktopContainer extends Component {
           onBottomPassedReverse={this.hideFixedMenu}
         >
           <Menu
+            id="navbar"
             fixed={fixed ? "top" : null}
             inverted={!fixed}
             pointing={!fixed}
             secondary={!fixed}
             size="large"
           >
-            <Container>
+            <Container id="navContainer">
               <Menu.Item>
                 <Link to="/">
                   <Image
+                    id="navLogo"
                     src="https://s3-us-west-1.amazonaws.com/gather-menu/Galvanize---Galvanize-Logo---_G_-only.png"
-                    className="navLogo"
                   />
                 </Link>
               </Menu.Item>
 
-              <Menu.Item>
-                <Link to="/menu">Menu</Link>
+              <Menu.Item id="navItem">
+                <Link to="/menu">Menu List</Link>
               </Menu.Item>
 
-              <Menu.Item>Catering</Menu.Item>
+              <Menu.Item id="navItem">
+                <Link to="/catering">Catering</Link>
+              </Menu.Item>
 
-              <Menu.Item>
+              <Menu.Item id="navItem">
                 <Link to="/cart">Cart</Link>
               </Menu.Item>
 
-              <Menu.Item position="right">
+              <Menu.Item id="navItem" position="right">
                 <Button inverted={!fixed}>
                   <Link to="/login">Log in</Link>
                 </Button>
@@ -110,6 +113,7 @@ class MobileContainer extends Component {
         maxWidth={Responsive.onlyMobile.maxWidth}
       >
         <Sidebar
+          id="navSideBar"
           as={Menu}
           animation="push"
           inverted
@@ -119,15 +123,12 @@ class MobileContainer extends Component {
         >
           <Menu.Item>
             <Link to="/">
-              <Image
-                src="https://s3-us-west-1.amazonaws.com/gather-menu/Galvanize---Galvanize-Logo---_G_-only.png"
-                className="navLogo"
-              />
+              <Image src="https://s3-us-west-1.amazonaws.com/gather-menu/Galvanize---Galvanize-Logo---_G_-only.png" />
             </Link>
           </Menu.Item>
 
           <Menu.Item>
-            <Link to="/menu">Menu</Link>
+            <Link to="/menu">Menu List</Link>
           </Menu.Item>
 
           <Menu.Item>Catering</Menu.Item>
@@ -141,7 +142,7 @@ class MobileContainer extends Component {
           <Segment
             inverted
             textAlign="center"
-            style={{ minHeight: 200, padding: "1em 0em" }}
+            style={{ minHeight: 10, padding: "1em 0em" }}
             vertical
           >
             <Container id="navbar">
@@ -159,10 +160,6 @@ class MobileContainer extends Component {
                 </Menu.Item>
                 {/* <Menu.Item position="right"> <GoogleAuth /> </Menu.Item> */}
               </Menu>
-              <Image
-                src="https://s3-us-west-1.amazonaws.com/gather-menu/Galvanize---Galvanize-Logo---_G_-only.png"
-                className="navLogo"
-              />
             </Container>
           </Segment>
 
