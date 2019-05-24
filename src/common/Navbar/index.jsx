@@ -157,7 +157,7 @@ class MobileContainer extends Component {
                     Sign Up
                   </Button>
                 </Menu.Item>
-                <Menu.Item position="right">{/* <GoogleAuth /> */}</Menu.Item>
+                {/* <Menu.Item position="right"> <GoogleAuth /> </Menu.Item> */}
               </Menu>
             </Container>
           </Segment>
