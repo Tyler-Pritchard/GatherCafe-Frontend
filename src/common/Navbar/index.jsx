@@ -117,14 +117,24 @@ class MobileContainer extends Component {
           vertical
           visible={sidebarOpened}
         >
-          <Menu.Item as="a" active>
-            Home
+          <Menu.Item>
+            <Link to="/">
+              <Image
+                src="https://s3-us-west-1.amazonaws.com/gather-menu/Galvanize---Galvanize-Logo---_G_-only.png"
+                className="navLogo"
+              />
+            </Link>
           </Menu.Item>
-          <Menu.Item as="a">Work</Menu.Item>
-          <Menu.Item as="a">Company</Menu.Item>
-          <Menu.Item as="a">Careers</Menu.Item>
-          <Menu.Item as="a">Log in</Menu.Item>
-          <Menu.Item as="a">Sign Up</Menu.Item>
+
+          <Menu.Item>
+            <Link to="/menu">Menu</Link>
+          </Menu.Item>
+
+          <Menu.Item>Catering</Menu.Item>
+
+          <Menu.Item>
+            <Link to="/cart">Cart</Link>
+          </Menu.Item>
         </Sidebar>
 
         <Sidebar.Pusher dimmed={sidebarOpened}>
@@ -147,9 +157,7 @@ class MobileContainer extends Component {
                     Sign Up
                   </Button>
                 </Menu.Item>
-                <Menu.Item position="right">
-                  <GoogleAuth />
-                </Menu.Item>
+                <Menu.Item position="right">{/* <GoogleAuth /> */}</Menu.Item>
               </Menu>
             </Container>
           </Segment>
