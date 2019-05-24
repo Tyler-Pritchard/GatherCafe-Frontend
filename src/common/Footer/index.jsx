@@ -78,7 +78,7 @@ ResponsiveContainer.propTypes = {
 const Footer = () => (
   <ResponsiveContainer>
     <Segment inverted vertical style={{ padding: "5em 0em" }}>
-      <Container>
+      <Container id="footer">
         <Grid divided inverted stackable>
           <Grid.Row>
             <Grid.Column width={3}>
