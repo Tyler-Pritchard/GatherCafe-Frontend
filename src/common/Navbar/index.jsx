@@ -77,7 +77,7 @@ class DesktopContainer extends Component {
                   <Link to="/userprofile">Sign Up</Link>
                 </Button>
               </Menu.Item>
-              <Menu.Item position="right">{/* <GoogleAuth /> */}</Menu.Item>
+              {/* <Menu.Item position="right"> <GoogleAuth /> </Menu.Item> */}
             </Container>
           </Menu>
         </Visibility>
@@ -141,24 +141,28 @@ class MobileContainer extends Component {
           <Segment
             inverted
             textAlign="center"
-            style={{ minHeight: 350, padding: "1em 0em" }}
+            style={{ minHeight: 200, padding: "1em 0em" }}
             vertical
           >
-            <Container>
+            <Container id="navbar">
               <Menu inverted pointing secondary size="large">
                 <Menu.Item onClick={this.handleToggle}>
                   <Icon name="sidebar" />
                 </Menu.Item>
                 <Menu.Item position="right">
-                  <Button as="a" inverted>
-                    Log in
+                  <Button>
+                    <Link to="/login">Log in</Link>
                   </Button>
-                  <Button as="a" inverted style={{ marginLeft: "0.5em" }}>
-                    Sign Up
+                  <Button inverted style={{ marginLeft: "0.5em" }}>
+                    <Link to="/userprofile">Sign Up</Link>
                   </Button>
                 </Menu.Item>
                 {/* <Menu.Item position="right"> <GoogleAuth /> </Menu.Item> */}
               </Menu>
+              <Image
+                src="https://s3-us-west-1.amazonaws.com/gather-menu/Galvanize---Galvanize-Logo---_G_-only.png"
+                className="navLogo"
+              />
             </Container>
           </Segment>
 
