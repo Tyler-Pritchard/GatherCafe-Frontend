@@ -1,7 +1,6 @@
 body {
   border: 3px dotted;
-  background-color:
-    black !important;
+  background-color: black;
 }
 
 Button {
@@ -17,27 +16,34 @@ a {
   font-weight: bold;
 }
 
-#navLogo {
-  border: 1px solid red;
-  height: 20vh;
-  margin-right: 0.5em;
-  background-color: black !important;
-}
 
 #navbar {
   border: 2px solid blue;
-  background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/gather-banner1.jpg") !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 1em;
+  background-color:
+    black !important;
 }
 
 #navContainer {
   border: 1px solid black;
   width: 97%;
-  justify-contentz: center !important;
+  position: relative;
 }
 
+#navLogo {
+  border: 1px solid red;
+  height: 20vh;
+  margin: auto 0.5em auto 0.5em;
+  background-color: black !important;
+  vertical-align: middle;
+
+}
+
+#navItem {
+  border: 1px solid black;
+  height: 20vh;
+  margin: auto 0.5em auto 0.5em;
+  vertical-align: middle;
+}
 
 #navbarMobile {
   background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/gather-banner1.jpg") !important;
@@ -80,4 +86,23 @@ a {
 
 #submitOrderButtons {
   margin-top: 2em !important;
+}
+
+#homePage {
+  border: 1px solid blue;
+  background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe1.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 97%;
+  position: relative;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 1.5em;
+}
+
+#homeBackground {
+  background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe2.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }

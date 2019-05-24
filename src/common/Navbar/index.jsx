@@ -56,19 +56,19 @@ class DesktopContainer extends Component {
                 </Link>
               </Menu.Item>
 
-              <Menu.Item>
+              <Menu.Item id="navItem">
                 <Link to="/menu">Menu List</Link>
               </Menu.Item>
 
-              <Menu.Item>
+              <Menu.Item id="navItem">
                 <Link to="/catering">Catering</Link>
               </Menu.Item>
 
-              <Menu.Item>
+              <Menu.Item id="navItem">
                 <Link to="/cart">Cart</Link>
               </Menu.Item>
 
-              <Menu.Item position="right">
+              <Menu.Item id="navItem" position="right">
                 <Button inverted={!fixed}>
                   <Link to="/login">Log in</Link>
                 </Button>
