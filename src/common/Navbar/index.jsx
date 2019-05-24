@@ -56,7 +56,7 @@ class DesktopContainer extends Component {
               </Menu.Item>
 
               <Menu.Item>
-                <Link to="/menu">Menu</Link>
+                <Link to="/menu">Menu List</Link>
               </Menu.Item>
 
               <Menu.Item>Catering</Menu.Item>
@@ -127,7 +127,7 @@ class MobileContainer extends Component {
           </Menu.Item>
 
           <Menu.Item>
-            <Link to="/menu">Menu</Link>
+            <Link to="/menu">Menu List</Link>
           </Menu.Item>
 
           <Menu.Item>Catering</Menu.Item>
@@ -159,10 +159,6 @@ class MobileContainer extends Component {
                 </Menu.Item>
                 {/* <Menu.Item position="right"> <GoogleAuth /> </Menu.Item> */}
               </Menu>
-              <Image
-                src="https://s3-us-west-1.amazonaws.com/gather-menu/Galvanize---Galvanize-Logo---_G_-only.png"
-                className="navLogo"
-              />
             </Container>
           </Segment>
 

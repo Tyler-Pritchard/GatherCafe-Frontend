@@ -31,8 +31,8 @@ a {
 }
 
 .navLogo {
-  height: 9vh !important;
-  width: 5vw !important;
+  height: 8vh !important;
+  width: 7vw !important;
   background-color: black !important;
 }
 
@@ -40,6 +40,7 @@ a {
   width: 100% !important;
   text-align: center !important;
 }
+
 
 .itemCard {
   margin: 2vh 0 2vh 0 !important;
@@ -54,7 +55,9 @@ a {
 }
 
 #navbar {
-  background-color: #E28C05 !important;
+  background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/gather-banner1.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-bottom: 2em;
 }
 
