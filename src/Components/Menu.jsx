@@ -4,7 +4,6 @@ import { Card, Button } from "semantic-ui-react";
 
 const Menu = props => {
   let { name } = props.menu;
-  console.log(props, "THESE ARE THE MENU PROPS");
 
   return !props.menu ? null : (
     <div>
