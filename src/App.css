@@ -1,4 +1,5 @@
 body {
+  background-color: black;
   background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe2.jpg") !important;
   background-repeat: no-repeat;
   height: 100%;
@@ -81,9 +82,11 @@ a {
 
 #footer {
   background-color: #ABA387 !important;
-  margin-top: 2em;
   color: black !important;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 #submitOrderButtons {
@@ -103,7 +106,6 @@ a {
 
 #homeBackground {
   background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe2.jpg") !important;
-  background-repeat: no-repeat;
   background-size: cover;
 
 }

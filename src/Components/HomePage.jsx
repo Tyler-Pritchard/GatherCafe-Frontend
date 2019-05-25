@@ -44,8 +44,6 @@ HomepageHeading.propTypes = {
 };
 
 class DesktopContainer extends Component {
-  state = {};
-
   render() {
     const { children } = this.props;
 
@@ -56,7 +54,7 @@ class DesktopContainer extends Component {
           onBottomPassed={this.showFixedMenu}
           onBottomPassedReverse={this.hideFixedMenu}
         >
-          <Segment id="homeBackground" inverted textAlign="center" vertical>
+          <Segment id="homeBackground">
             <HomepageHeading />
           </Segment>
         </Visibility>
