@@ -68,8 +68,13 @@ a {
   padding: 1em;
 }
 
-.itemCard {
-  margin: 2vh 0 2vh 0 !important;
+#itemCards {
+  margin-bottom: 5vh;
+  padding-bottom: 10vh;
+}
+
+#itemCard {
+  margin: 2vh 0 2vh 0;
 }
 
 .content {
@@ -81,6 +86,7 @@ a {
 }
 
 #footer {
+  border: 1px solid blue;
   background-color: #ABA387 !important;
   color: black !important;
   text-align: center;
@@ -94,18 +100,19 @@ a {
 }
 
 #homePage {
+  border: 1px solid green;
   background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe1.jpg") !important;
   background-repeat: no-repeat;
   background-size: cover;
   width: 97%;
-  position: relative;
   font-weight: normal;
-  margin-bottom: 0;
   margin-top: 1.5em;
 }
 
 #homeBackground {
+  border: 1px solid red;
   background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe2.jpg") !important;
+  height: 100% !important;
   background-size: cover;
 
 }

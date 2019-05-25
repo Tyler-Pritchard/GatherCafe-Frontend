@@ -22,16 +22,7 @@ const getWidth = () => {
 const HomepageHeading = ({ mobile }) => (
   <Container text id="homePage">
     <Header as="h1" content="Welcome to Gather Cafe at Galvanize" inverted />
-    <Header
-      as="h2"
-      content="What are you hungry for?"
-      inverted
-      style={{
-        fontSize: mobile ? "1.5em" : "1.7em",
-        fontWeight: "normal",
-        marginTop: mobile ? "0.5em" : "1.5em"
-      }}
-    />
+    <Header as="h2" content="What are you hungry for?" inverted />
     <Button primary size="huge">
       <Link to="/menu">Let's Eat!</Link>
       <Icon name="right arrow" />
@@ -54,7 +45,7 @@ class DesktopContainer extends Component {
           onBottomPassed={this.showFixedMenu}
           onBottomPassedReverse={this.hideFixedMenu}
         >
-          <Segment id="homeBackground">
+          <Segment id="homeBackground" inverted textAlign="center" vertical>
             <HomepageHeading />
           </Segment>
         </Visibility>

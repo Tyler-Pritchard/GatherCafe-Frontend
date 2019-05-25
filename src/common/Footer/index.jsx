@@ -77,8 +77,8 @@ ResponsiveContainer.propTypes = {
 
 const Footer = () => (
   <ResponsiveContainer>
-    <Segment>
-      <Container id="footer">
+    <Segment id="footer">
+      <Container>
         <Grid divided inverted stackable>
           <Grid.Row>
             <Grid.Column width={3}>
