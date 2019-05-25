@@ -104,8 +104,13 @@ const Footer = () => (
                 Gather Cafe
               </Header>
               <p>
-                Check out our calendar and keep up with all of our weekly
-                events!
+                Galvanize Building
+                <br />
+                44 Tehama Street
+                <br />
+                San Francisco, CA 94105
+                <br />
+                (415) 805-1888}
               </p>
             </Grid.Column>
           </Grid.Row>
