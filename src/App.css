@@ -3,6 +3,7 @@ body {
   background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe2.jpg") !important;
   background-repeat: no-repeat;
   height: 100%;
+  opacity: .92;
 }
 
 Button {
@@ -32,7 +33,7 @@ a {
 
 #navLogo {
   border: 1px solid #E28C05;
-  height: 12vh;
+  height: 11vh;
   background-color: black !important;
   overflow: auto;
 }
@@ -70,7 +71,6 @@ a {
 
 #itemCards {
   margin-bottom: 5vh;
-  padding-bottom: 10vh;
 }
 
 #itemCard {
@@ -90,8 +90,8 @@ a {
   background-color: #ABA387 !important;
   color: black !important;
   text-align: center;
-  position: fixed;
   bottom: 0;
+  padding-top: 2vh;
   width: 100%;
 }
 
