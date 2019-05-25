@@ -1,7 +1,9 @@
 body {
+  background-color: black;
   background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe2.jpg") !important;
   background-repeat: no-repeat;
   height: 100%;
+  opacity: .92;
 }
 
 Button {
@@ -31,7 +33,7 @@ a {
 
 #navLogo {
   border: 1px solid #E28C05;
-  height: 12vh;
+  height: 11vh;
   background-color: black !important;
   overflow: auto;
 }
@@ -67,8 +69,12 @@ a {
   padding: 1em;
 }
 
-.itemCard {
-  margin: 2vh 0 2vh 0 !important;
+#itemCards {
+  margin-bottom: 5vh;
+}
+
+#itemCard {
+  margin: 2vh 0 2vh 0;
 }
 
 .content {
@@ -81,9 +87,11 @@ a {
 
 #footer {
   background-color: #ABA387 !important;
-  margin-top: 2em;
   color: black !important;
   text-align: center;
+  bottom: 0;
+  padding-top: 2vh;
+  width: 100%;
 }
 
 #submitOrderButtons {
@@ -95,15 +103,13 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   width: 97%;
-  position: relative;
   font-weight: normal;
-  margin-bottom: 0;
   margin-top: 1.5em;
 }
 
 #homeBackground {
   background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe2.jpg") !important;
-  background-repeat: no-repeat;
+  height: 100% !important;
   background-size: cover;
 
 }
