@@ -15,8 +15,6 @@ class ItemsList extends React.Component {
 
   render() {
     const itemsArray = this.props.items.map(item => {
-      console.log(item, "THESE ARE THE ITEM PROPS");
-      console.log(this.state, "these are the prosp");
       if (item.menu_id == this.props.meal) {
         return (
           <Item
