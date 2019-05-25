@@ -44,7 +44,6 @@ class DesktopContainer extends Component {
             inverted={!fixed}
             pointing={!fixed}
             secondary={!fixed}
-            size="large"
           >
             <Container id="navContainer">
               <Menu.Item>
@@ -68,7 +67,7 @@ class DesktopContainer extends Component {
                 <Link to="/cart">Cart</Link>
               </Menu.Item>
 
-              <Menu.Item id="navItem" position="right">
+              <Menu.Item id="navButtons" position="right">
                 <Button inverted={!fixed}>
                   <Link to="/login">Log in</Link>
                 </Button>

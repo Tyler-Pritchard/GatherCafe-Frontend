@@ -9,7 +9,6 @@ class MenusList extends React.Component {
     const menusArray = !this.props.menus
       ? []
       : this.props.menus.map(menu => {
-          console.log(this.props, "HERE ARE THE PROPS");
           return (
             <div>
               <Link to={`${menu.name}`}>
@@ -19,8 +18,10 @@ class MenusList extends React.Component {
           );
         });
     return (
-      <div>
-        <Container text>{menusArray}</Container>
+      <div id="menuList">
+        <Container text id="menuListItem">
+          {menusArray}
+        </Container>
       </div>
     );
   }

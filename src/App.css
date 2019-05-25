@@ -1,5 +1,4 @@
 body {
-  border: 3px dotted;
   background-color: black;
 }
 
@@ -18,7 +17,6 @@ a {
 
 
 #navbar {
-  border: 2px solid blue;
   background-color:
     black !important;
 }
@@ -30,19 +28,22 @@ a {
 }
 
 #navLogo {
-  border: 1px solid red;
-  height: 20vh;
-  margin: auto 0.5em auto 0.5em;
+  height: 13vh;
   background-color: black !important;
-  vertical-align: middle;
-
+  overflow: auto;
+  margin: auto .5em 2vh .5em;
 }
 
 #navItem {
-  border: 1px solid black;
+  border: 1px solid white;
+  height: auto;
+  margin: auto .5em 3.5em .5em;
+
+}
+
+#navButtons {
   height: 20vh;
   margin: auto 0.5em auto 0.5em;
-  vertical-align: middle;
 }
 
 #navbarMobile {
@@ -105,4 +106,15 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 
+}
+
+#menuList {
+  background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe1.jpg");
+  background-size: cover;
+}
+
+#menuListItem {
+  opacity: .95;
+  width: 40%;
+  text-align: center;
 }
