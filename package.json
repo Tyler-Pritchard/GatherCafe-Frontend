@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint-loader": "^2.1.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-redux": "^6.0.0",
+    "react-redux": "^7.0.3",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^3.0.0",
     "react-stripe-checkout": "^2.6.3",
@@ -19,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "webpack": "webpack"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,7 +37,12 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-loader": "^8.0.6",
     "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.10.0"
+    "enzyme-adapter-react-16": "^1.10.0",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
   }
 }
