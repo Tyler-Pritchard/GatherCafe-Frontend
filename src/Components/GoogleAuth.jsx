@@ -66,6 +66,6 @@ const mapStateToProps = state => {
 };
 
 export default connect(
-  null,
+  mapStateToProps,
   { signIn, signOut }
 )(GoogleAuth);

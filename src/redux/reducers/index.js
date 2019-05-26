@@ -4,9 +4,10 @@ import {
 import items from "./items";
 import menus from "./menus";
 import cartReducer from './cart';
+import authReducer from './authReducer';
 
 export default combineReducers({
-  replaceMe: () => 'asdafsd',
+  auth: authReducer,
   items,
   menus,
   cart: cartReducer
