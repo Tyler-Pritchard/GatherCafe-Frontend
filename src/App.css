@@ -89,6 +89,7 @@ a {
   background-color: #ABA387 !important;
   color: black !important;
   text-align: center;
+  position: fixed;
   bottom: 0;
   padding-top: 2vh;
   width: 100%;
