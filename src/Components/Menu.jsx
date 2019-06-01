@@ -7,7 +7,7 @@ const Menu = props => {
 
   return !props.menu ? null : (
     <div>
-      <Card fluid link raised>
+      <Card style={{ marginBottom: "1em" }} fluid link raised>
         <Card.Content>
           <Card.Header>{name}</Card.Header>
         </Card.Content>

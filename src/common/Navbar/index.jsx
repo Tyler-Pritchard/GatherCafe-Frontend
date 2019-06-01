@@ -123,10 +123,8 @@ class MobileContainer extends Component {
           vertical
           visible={sidebarOpened}
         >
-          <Menu.Item>
-            <Link to="/">
-              <Image src="https://s3-us-west-1.amazonaws.com/gather-menu/Galvanize---Galvanize-Logo---_G_-only.png" />
-            </Link>
+          <Menu.Item as="a" active>
+            <Link to="/" />
           </Menu.Item>
 
           <Menu.Item>

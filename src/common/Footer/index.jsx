@@ -50,6 +50,7 @@ class MobileContainer extends Component {
 
     return (
       <Responsive
+        style={{ position: "bottom", marginTop: "40em" }}
         as={Sidebar.Pushable}
         getWidth={getWidth}
         maxWidth={Responsive.onlyMobile.maxWidth}
