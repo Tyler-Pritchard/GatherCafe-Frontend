@@ -26,7 +26,11 @@ class ItemsList extends React.Component {
         );
       }
     });
-    return <Container text>{itemsArray}</Container>;
+    return (
+      <div className="ItemsList">
+        <Container text>{itemsArray}</Container>
+      </div>
+    );
   }
 }
 const mapStateToProps = state => {
