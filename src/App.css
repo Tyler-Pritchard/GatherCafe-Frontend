@@ -1,9 +1,15 @@
 body {
   padding: 3rem;
+  background: gray;
 }
 
 h2 {
   color: #e28c05;
+}
+
+.ItemsList {
+  background: gray;
+  padding-bottom: 20vh;
 }
 
 button {
@@ -17,6 +23,7 @@ a {
   font-size: large !important;
   font-weight: bold;
 }
+
 
 #navbar {
   background-color: black !important;
@@ -90,6 +97,7 @@ a {
   bottom: 0;
   padding-top: 2vh;
   width: 100%;
+  z-index: 1000;
 }
 
 #submitOrderButtons {
