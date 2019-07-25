@@ -20,9 +20,14 @@ const getWidth = () => {
 };
 
 const HomepageHeading = ({ mobile }) => (
-  <Container text id="homePage">
+  <Container text className="homePage">
     <Header as="h1" content="Welcome to Gather Cafe at Galvanize" inverted />
-    <Header as="h2" content="What are you hungry for?" inverted />
+    <Header
+      as="h2"
+      content="What are you hungry for?"
+      inverted
+      color="orange"
+    />
     <Button primary size="huge">
       <Link to="/menu">Let's Eat!</Link>
       <Icon name="right arrow" />
@@ -45,9 +50,9 @@ class DesktopContainer extends Component {
           onBottomPassed={this.showFixedMenu}
           onBottomPassedReverse={this.hideFixedMenu}
         >
-          <Segment id="homeBackground" inverted textAlign="center" vertical>
+          <div className="homeBackground">
             <HomepageHeading />
-          </Segment>
+          </div>
         </Visibility>
 
         {children}
