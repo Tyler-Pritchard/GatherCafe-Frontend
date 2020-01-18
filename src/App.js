@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 import Login from "./Components/Login";
 import UserProfile from "./Components/UserProfile";
 import MenusList from "./Components/MenusList";
