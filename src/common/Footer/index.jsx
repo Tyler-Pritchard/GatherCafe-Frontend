@@ -1,10 +1,15 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 import {
   Container,
   Grid,
-  Header,
   List,
   Responsive,
   Segment,
@@ -78,41 +83,35 @@ ResponsiveContainer.propTypes = {
 
 const Footer = () => (
   <ResponsiveContainer>
-    <Segment id="footer">
-      <Container>
-        <Grid divided inverted stackable>
+    <Segment class="footer">
+      <Container class="footer__navigation">
+        <Grid divided stackable class="footer__list">
           <Grid.Row>
-            <Grid.Column width={3}>
-              <Header inverted as="h4" content="About" />
-              <List link inverted>
-                <List.Item as="a">Sitemap</List.Item>
-                <List.Item as="a">Contact Us</List.Item>
-                <List.Item as="a">Terms of service</List.Item>
-                <List.Item as="a">Privacy policy</List.Item>
+            <Grid.Column width={5}>
+              <List link class="footer_list">
+                <List.Item as="a" class="footer_item footer__link">Sitemap</List.Item>
+                <List.Item as="a" class="footer_item footer__link">Contact Us</List.Item>
+                <List.Item as="a" class="footer_item footer__link">Terms of service</List.Item>
+                <List.Item as="a" class="footer_item footer__link">Privacy policy</List.Item>
               </List>
             </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as="h4" content="Services" />
-              <List link inverted>
-                <List.Item as="a">Business Catering</List.Item>
-                <List.Item as="a">Menus</List.Item>
-                <List.Item as="a">Locaton</List.Item>
-                <List.Item as="a">Galvanize Home</List.Item>
+            <Grid.Column width={5}>
+              <List class="footer_list" link>
+                <List.Item as="a" class="footer__link">Business Catering</List.Item>
+                <List.Item as="a" class="footer__link">
+                <Link to="/menu">Menu List</Link>
+                </List.Item>
+                <List.Item as="a" class="footer__link">Locaton</List.Item>
+                <List.Item as="a" class="footer__link">Galvanize Home</List.Item>
               </List>
             </Grid.Column>
-            <Grid.Column width={7}>
-              <Header as="h4" inverted>
-                Gather Cafe
-              </Header>
-              <p>
-                Galvanize Building
-                <br />
-                44 Tehama Street
-                <br />
-                San Francisco, CA 94105
-                <br />
-                (415) 805-1888}
-              </p>
+            <Grid.Column width={5}>
+              <h5 class="footer__address">
+                Galvanize<br />
+                44 Tehama Street<br />
+                San Francisco, CA 94105<br />
+                (415) 805-1888
+              </h5>
             </Grid.Column>
           </Grid.Row>
         </Grid>
