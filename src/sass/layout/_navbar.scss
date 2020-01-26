@@ -1,0 +1,52 @@
+.navbar {
+    background-color: $color-black;
+    
+    &__logo-box {
+        top: 10px;
+        left: 20px;
+        position: fixed;
+    }
+    
+    &__logo {
+        border: 1px solid #e28c05;
+        background-color: $color-black;
+        overflow: auto;
+    }
+
+    &__container {
+        border: 2px solid green;
+        width: 97%;
+        height: 15vh;
+        margin: 20px 10px 20px 10px;
+    }
+  
+  &__item {
+    border: 1px solid white;
+    padding: 2em;
+  }
+  
+  &__buttons {
+    height: 10vh;
+    margin: auto 0.5em auto 0.5em;
+  }
+  
+  &__mobile {
+    /* background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/gather-banner1.jpg") !important; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1em;
+  }
+  
+  &__logo-mobile {
+    width: 5%;
+    background-color: black !important;
+  }
+  
+  &__side-bar {
+    /* background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe4.jpg") !important; */
+    filter: blur(2px);
+    background: cover;
+    background-repeat: no-repeat;
+    padding: 1em;
+  }
+}

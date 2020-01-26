@@ -5,8 +5,8 @@ const Menu = props => {
 
   return !props.menu ? null : (
     <div>
-      <div class="feature-box">
-        <button class="btn btn--animated btn--orange btn-text">{name}</button>
+      <div className="feature-box">
+        <button className="btn btn--animated btn--orange btn-text">{name}</button>
       </div>
     </div>
   );

@@ -21,6 +21,7 @@
 @import "layout/header";
 @import "layout/footer";
 @import "layout/navigation";
+@import "layout/navbar";
 
 @import "pages/home";
 
@@ -38,54 +39,6 @@ body {
 .ItemsList {
   background: gray;
   padding-bottom: 20vh;
-}
-
-#navbar {
-  background-color: black !important;
-}
-
-#navContainer {
-  width: 97%;
-  height: 15vh;
-}
-
-
-#navLogo {
-  border: 1px solid #e28c05;
-  height: 11vh;
-  background-color: black !important;
-  overflow: auto;
-}
-
-#navItem {
-  border: 1px solid white;
-  height: auto;
-  margin: auto 1.5em 4vh 1.5em;
-}
-
-#navButtons {
-  height: 10vh;
-  margin: auto 0.5em auto 0.5em;
-}
-
-#navbarMobile {
-  /* background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/gather-banner1.jpg") !important; */
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 1em;
-}
-
-.navLogoMobile {
-  width: 5%;
-  background-color: black !important;
-}
-
-#navSideBar {
-  /* background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe4.jpg") !important; */
-  filter: blur(2px);
-  background: cover;
-  background-repeat: no-repeat;
-  padding: 1em;
 }
 
 .content {

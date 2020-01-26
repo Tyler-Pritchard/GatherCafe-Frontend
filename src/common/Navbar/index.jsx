@@ -2,12 +2,12 @@ import PropTypes from "prop-types";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import GoogleAuth from "../../Components/GoogleAuth";
+import svg from "./images/sprite.svg";
 
 import {
   Button,
   Container,
   Icon,
-  Image,
   Menu,
   Responsive,
   Segment,
@@ -38,36 +38,42 @@ class DesktopContainer extends Component {
           onBottomPassed={this.showFixedMenu}
           onBottomPassedReverse={this.hideFixedMenu}
         >
-          <Menu
-            id="navbar"
+          <div
+            className="navbar"
             fixed={fixed ? "top" : null}
             inverted={!fixed}
             pointing={!fixed}
             secondary={!fixed}
           >
-            <Container id="navContainer">
-              <Menu.Item>
+                <div className="navbar__logo-box">
                 <Link to="/">
-                  <Image
-                    id="navLogo"
-                    src="https://s3-us-west-1.amazonaws.com/gather-menu/Galvanize---Galvanize-Logo---_G_-only.png"
-                  />
+                  <img
+                    className="navbar__logo"
+                    src={"/images/logo-black-small.jpg"}
+                    alt="Galvanize Home"
+                     />
                 </Link>
-              </Menu.Item>
+                </div>
+              
+              <ul className="navbar__container">
 
-              <Menu.Item id="navItem">
+              <li className="navbar__item">
                 <Link to="/menu">Menu List</Link>
-              </Menu.Item>
+              </li>
 
-              <Menu.Item id="navItem">
+              <li className="navbar__item">
                 <Link to="/catering">Catering</Link>
-              </Menu.Item>
+              </li>
 
-              <Menu.Item id="navItem">
-                <Link to="/cart">Cart</Link>
-              </Menu.Item>
+              <li className="navbar__item">
+                <Link to="/cart">
+                    <svg class="cart__icon">
+                      <use xlinkHref={`${svg}#shopping-cart`}>Cart</use>
+                    </svg>
+                </Link>
+              </li>
 
-              <Menu.Item id="navButtons" position="right">
+              <li className="navar__buttons" position="right">
                 <Button inverted={!fixed}>
                   <Link to="/login">Log in</Link>
                 </Button>
@@ -78,13 +84,13 @@ class DesktopContainer extends Component {
                 >
                   <Link to="/userprofile">Sign Up</Link>
                 </Button>
-              </Menu.Item>
-              <Menu.Item position="right">
+              </li>
+              <li position="right">
                 {" "}
                 <GoogleAuth />{" "}
-              </Menu.Item>
-            </Container>
-          </Menu>
+              </li>
+            </ul>
+          </div>
         </Visibility>
 
         {children}
@@ -115,7 +121,7 @@ class MobileContainer extends Component {
         maxWidth={Responsive.onlyMobile.maxWidth}
       >
         <Sidebar
-          id="navSideBar"
+          className="navbar__side-bar"
           as={Menu}
           animation="push"
           inverted
@@ -123,9 +129,15 @@ class MobileContainer extends Component {
           vertical
           visible={sidebarOpened}
         >
-          <Menu.Item as="a" active>
-            <Link to="/" />
-          </Menu.Item>
+          <div className="navbar__logo-box">
+                <Link to="/">
+                  <img
+                    className="navbar__logo"
+                    src={"/images/logo-black-small.jpg"}
+                    alt="Galvanize Home"
+                     />
+                </Link>
+                </div>
 
           <Menu.Item>
             <Link to="/menu">Menu List</Link>
@@ -145,7 +157,7 @@ class MobileContainer extends Component {
             style={{ minHeight: 10, padding: "1em 0em" }}
             vertical
           >
-            <Container id="navbar">
+            <Container class="navbar">
               <Menu inverted pointing secondary size="large">
                 <Menu.Item onClick={this.handleToggle}>
                   <Icon name="sidebar" />

@@ -1,11 +1,6 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import {
   Container,
@@ -54,14 +49,13 @@ class MobileContainer extends Component {
     const { sidebarOpened } = this.state;
 
     return (
-      <Responsive
-        style={{ position: "bottom", marginTop: "40em" }}
+      <div className="footer__mobile-menu"
         as={Sidebar.Pushable}
         getWidth={getWidth}
         maxWidth={Responsive.onlyMobile.maxWidth}
       >
         <Sidebar.Pusher dimmed={sidebarOpened}>{children}</Sidebar.Pusher>
-      </Responsive>
+      </div>
     );
   }
 }
@@ -83,30 +77,30 @@ ResponsiveContainer.propTypes = {
 
 const Footer = () => (
   <ResponsiveContainer>
-    <Segment class="footer">
-      <Container class="footer__navigation">
-        <Grid divided stackable class="footer__list">
+    <Segment className="footer">
+      <Container className="footer__navigation">
+        <Grid divided stackable className="footer__list">
           <Grid.Row>
             <Grid.Column width={5}>
-              <List link class="footer_list">
-                <List.Item as="a" class="footer_item footer__link">Sitemap</List.Item>
-                <List.Item as="a" class="footer_item footer__link">Contact Us</List.Item>
-                <List.Item as="a" class="footer_item footer__link">Terms of service</List.Item>
-                <List.Item as="a" class="footer_item footer__link">Privacy policy</List.Item>
+              <List link className="footer_list">
+                <List.Item as="a" className="footer_item">Sitemap</List.Item>
+                <List.Item as="a" className="footer_item">Contact Us</List.Item>
+                <List.Item as="a" className="footer_item">Terms of service</List.Item>
+                <List.Item as="a" className="footer_item">Privacy policy</List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={5}>
-              <List class="footer_list" link>
-                <List.Item as="a" class="footer__link">Business Catering</List.Item>
-                <List.Item as="a" class="footer__link">
+              <List className="footer_list" link>
+                <List.Item as="a" className="footer__link">Business Catering</List.Item>
+                <List.Item as="a" className="footer__link">
                 <Link to="/menu">Menu List</Link>
                 </List.Item>
-                <List.Item as="a" class="footer__link">Locaton</List.Item>
-                <List.Item as="a" class="footer__link">Galvanize Home</List.Item>
+                <List.Item as="a" className="footer__link">Locaton</List.Item>
+                <List.Item as="a" className="footer__link">Galvanize Home</List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={5}>
-              <h5 class="footer__address">
+              <h5 className="footer__address">
                 Galvanize<br />
                 44 Tehama Street<br />
                 San Francisco, CA 94105<br />

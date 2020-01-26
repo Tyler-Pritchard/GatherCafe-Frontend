@@ -5,10 +5,8 @@ import { Link } from "react-router-dom";
 import {
   Button,
   Container,
-  Header,
   Icon,
   Responsive,
-  Segment,
   Sidebar,
   Visibility
 } from "semantic-ui-react";
