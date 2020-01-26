@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import GoogleAuth from "../../Components/GoogleAuth";
-import svg from "./images/sprite.svg";
+import { ReactComponent as CartIcon} from '../../Icons/SVG/shopping-cart.svg'
 
 import {
   Button,
@@ -68,7 +68,7 @@ class DesktopContainer extends Component {
               <li className="navbar__item">
                 <Link to="/cart">
                     <svg class="cart__icon">
-                      <use xlinkHref={`${svg}#shopping-cart`}>Cart</use>
+                      <CartIcon />
                     </svg>
                 </Link>
               </li>
