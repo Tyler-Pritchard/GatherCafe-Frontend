@@ -1,35 +1,104 @@
 .navbar {
-    background-color: $color-black;
-    
-    &__logo-box {
-        top: 10px;
-        left: 20px;
-        position: fixed;
-    }
-    
-    &__logo {
-        border: 1px solid #e28c05;
-        background-color: $color-black;
-        overflow: auto;
+  background-color: $color-black;
+  border: .75rem inset rgba(255, 136, 0, 0.87);
+  padding: 1rem;
+  font-size: 1.1rem;
+
+  &__container {
+      height: 7rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0 1rem 0;
+  }
+  
+  &__logo {
+      border: 3px ridge brown;
+      background-color: $color-black;
+      height: 6rem;
+      margin-left: 3rem;
+
+      &:focus {
+        outline: none;
+      }
+  
+      &:active {
+        transform: translateY(2px);
+      }
+  }
+
+  &__menu {
+    background-color: $color-primary-light;
+    color: $color-primary;
+    border: 3px ridge $color-primary;
+    padding: 2em;
+    border-radius: 30%;
+
+    &:focus {
+      outline: none;
     }
 
-    &__container {
-        border: 2px solid green;
-        width: 97%;
-        height: 15vh;
-        margin: 20px 10px 20px 10px;
+    &:active {
+      transform: translateY(2px);
     }
-  
-  &__item {
-    border: 1px solid white;
-    padding: 2em;
+
   }
-  
+
   &__buttons {
-    height: 10vh;
-    margin: auto 0.5em auto 0.5em;
+    background-color: $color-primary-light;
+    border: 3px ridge brown;
+    padding: 1rem;
+  }
+
+  &__button {
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
   }
   
+  &__Oauth {
+    
+  }
+  
+  &__cart {
+    border: 1px dashed blue;
+    margin-right: 10rem;
+    
+  }
+  
+  &__cart-icon {
+    border: 3px ridge $color-primary;
+    background-color: $color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .75rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 20%;
+    fill: $color-primary-dark;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+
+
+  
+
+
+
   &__mobile {
     /* background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/gather-banner1.jpg") !important; */
     background-size: cover;

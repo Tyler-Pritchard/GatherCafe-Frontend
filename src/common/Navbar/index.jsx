@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import GoogleAuth from "../../Components/GoogleAuth";
-import { ReactComponent as CartIcon} from '../../Icons/SVG/shopping-cart.svg'
+import { ReactComponent as CartIcon} from '../../Icons/SVG/cart.svg'
 
 import {
   Button,
@@ -38,6 +38,9 @@ class DesktopContainer extends Component {
           onBottomPassed={this.showFixedMenu}
           onBottomPassedReverse={this.hideFixedMenu}
         >
+
+
+
           <div
             className="navbar"
             fixed={fixed ? "top" : null}
@@ -45,6 +48,8 @@ class DesktopContainer extends Component {
             pointing={!fixed}
             secondary={!fixed}
           >
+              <div className="navbar__container">
+
                 <div className="navbar__logo-box">
                 <Link to="/">
                   <img
@@ -55,42 +60,54 @@ class DesktopContainer extends Component {
                 </Link>
                 </div>
               
-              <ul className="navbar__container">
 
-              <li className="navbar__item">
-                <Link to="/menu">Menu List</Link>
-              </li>
-
-              <li className="navbar__item">
-                <Link to="/catering">Catering</Link>
-              </li>
-
-              <li className="navbar__item">
-                <Link to="/cart">
-                    <svg class="cart__icon">
-                      <CartIcon />
-                    </svg>
+              <div className="navbar__menu">
+                <Link to="/menu">
+                  Menu List
                 </Link>
-              </li>
+              </div>
 
-              <li className="navar__buttons" position="right">
-                <Button inverted={!fixed}>
+              <div className="navbar__menu">
+                <Link to="/catering">
+                  Catering
+                </Link>
+              </div>
+
+
+              <div className="navbar__buttons">
+                <Button 
+                  className="navbar__buton"
+                  >
                   <Link to="/login">Log in</Link>
                 </Button>
+
                 <Button
-                  inverted={!fixed}
-                  primary={fixed}
-                  style={{ marginLeft: "0.5em" }}
+                  className="navbar__button"
                 >
                   <Link to="/userprofile">Sign Up</Link>
                 </Button>
-              </li>
-              <li position="right">
-                {" "}
-                <GoogleAuth />{" "}
-              </li>
-            </ul>
+
+              </div>
+             
+              <div className="navbar__Oauth">
+                <GoogleAuth />
+              </div>
+
+              <div className="navbar__cart">
+                <Link to="/cart">
+                    <svg className="navbar__cart-icon">
+                      <CartIcon />
+                    </svg>
+                </Link>
+              </div>
+
+
+
+            </div>
           </div>
+
+
+
         </Visibility>
 
         {children}
@@ -146,7 +163,9 @@ class MobileContainer extends Component {
           <Menu.Item>Catering</Menu.Item>
 
           <Menu.Item>
-            <Link to="/cart">Cart</Link>
+            <Link to="/cart">
+              <CartIcon />
+            </Link>
           </Menu.Item>
         </Sidebar>
 
