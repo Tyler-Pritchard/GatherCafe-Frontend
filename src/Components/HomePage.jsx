@@ -1,14 +1,15 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { ReactComponent as BackgroundMP4 } from "../Images/Coffee-Twins.mp4";
+import { ReactComponent as BackgroundWebM } from "../Images/Coffee-Twins.webm";
+
 
 import {
   Button,
   Container,
-  Header,
   Icon,
   Responsive,
-  Segment,
   Sidebar,
   Visibility
 } from "semantic-ui-react";
@@ -20,14 +21,11 @@ const getWidth = () => {
 };
 
 const HomepageHeading = ({ mobile }) => (
-  <Container text className="homePage">
-    <Header as="h1" content="Welcome to Gather Cafe at Galvanize" inverted />
-    <Header
-      as="h2"
-      content="What are you hungry for?"
-      inverted
-      color="orange"
-    />
+  <Container text className="homePage__header">
+    <h1>Welcome to Gather Cafe at Galvanize</h1>
+    <h2>
+      What are you hungry for?
+      </h2>
     <Button primary size="huge">
       <Link to="/menu">Let's Eat!</Link>
       <Icon name="right arrow" />
@@ -50,7 +48,7 @@ class DesktopContainer extends Component {
           onBottomPassed={this.showFixedMenu}
           onBottomPassedReverse={this.hideFixedMenu}
         >
-          <div className="homeBackground">
+          <div className="homePage">
             <HomepageHeading />
           </div>
         </Visibility>

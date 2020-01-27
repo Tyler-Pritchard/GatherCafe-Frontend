@@ -1,11 +1,9 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 import {
   Container,
-  Grid,
-  Header,
-  List,
   Responsive,
   Segment,
   Sidebar
@@ -49,8 +47,7 @@ class MobileContainer extends Component {
     const { sidebarOpened } = this.state;
 
     return (
-      <Responsive
-        style={{ position: "bottom", marginTop: "40em" }}
+      <Responsive className="footer__mobile-menu"
         as={Sidebar.Pushable}
         getWidth={getWidth}
         maxWidth={Responsive.onlyMobile.maxWidth}
@@ -78,44 +75,43 @@ ResponsiveContainer.propTypes = {
 
 const Footer = () => (
   <ResponsiveContainer>
-    <Segment id="footer">
-      <Container>
-        <Grid divided inverted stackable>
-          <Grid.Row>
-            <Grid.Column width={3}>
-              <Header inverted as="h4" content="About" />
-              <List link inverted>
-                <List.Item as="a">Sitemap</List.Item>
-                <List.Item as="a">Contact Us</List.Item>
-                <List.Item as="a">Terms of service</List.Item>
-                <List.Item as="a">Privacy policy</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as="h4" content="Services" />
-              <List link inverted>
-                <List.Item as="a">Business Catering</List.Item>
-                <List.Item as="a">Menus</List.Item>
-                <List.Item as="a">Locaton</List.Item>
-                <List.Item as="a">Galvanize Home</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={7}>
-              <Header as="h4" inverted>
-                Gather Cafe
-              </Header>
-              <p>
-                Galvanize Building
-                <br />
-                44 Tehama Street
-                <br />
-                San Francisco, CA 94105
-                <br />
-                (415) 805-1888}
-              </p>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
+    <Segment>
+      <Container className="footer">
+
+        <div className="footer__logo-box">
+          <img 
+            src={"../../Images/Logos/logo-black-medium.jpg"}
+            className="footer__logo"
+            alt="Galvanize"
+          />
+        </div>
+
+        <div className="row">
+
+          <div className="col-1-of-2">
+            <div className="footer__navigation">
+              <ul className="footer__list">
+                <li className="footer__item">
+                  <Link to={"/"} className="footer__link">Company</Link>
+                  <Link to={"/"} className="footer__link">Contact Us</Link>
+                  <Link to={"/"} className="footer__link">Careers</Link>
+                  <Link to={"/"} className="footer__link">Privacy</Link>
+                  <Link to={"/"} className="footer__link">Terms</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="col-1-of-2">
+            <p className="footer__copyright">
+              Copyright &copy;  
+              <Link to={"www.tylerrobertpritchard.com"}>
+                Tyler Pritchard, 2020
+              </Link>
+            </p>
+          </div>
+        </div>
+
       </Container>
     </Segment>
   </ResponsiveContainer>

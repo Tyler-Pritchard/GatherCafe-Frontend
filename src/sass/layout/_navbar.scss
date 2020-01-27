@@ -1,0 +1,139 @@
+.navbar {
+  background-color: $color-black;
+  border: .75rem inset rgba(255, 136, 0, 0.87);
+  padding: 1rem;
+  font-size: 1.1rem;
+
+
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+  }
+
+  & > *:hover {
+    background-color: $color-primary-dark;
+  }
+
+  &__container {
+      height: 7rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0 1rem 0;
+
+      
+  }
+  
+  &__logo {
+      border: 3px ridge brown;
+      background-color: $color-black;
+      height: 6rem;
+      margin-left: 3rem;
+
+      &:focus {
+        outline: none;
+      }
+  
+      &:active {
+        transform: translateY(2px);
+      }
+  }
+
+  &__menu {
+    background-color: $color-primary-light;
+    color: $color-primary;
+    border: 3px ridge $color-primary;
+    padding: 2em;
+    border-radius: 30%;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+
+  }
+
+  &__buttons {
+    background-color: $color-primary-light;
+    border: 1px ridge brown;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  &__button {
+    border: none;
+    background-color: $color-primary-dark;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid brown;
+    
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+  
+  &__Oauth {
+    
+  }
+  
+  &__cart {
+    margin-right: 10rem;
+  }
+  
+  &__cart-icon {
+    border: 3px ridge $color-primary;
+    background-color: $color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .75rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 20%;
+    fill: $color-primary-dark;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+
+
+
+
+
+
+
+  &__mobile {
+    /* background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/gather-banner1.jpg") !important; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1em;
+  }
+  
+  &__logo-mobile {
+    width: 5%;
+    background-color: black !important;
+  }
+  
+  &__side-bar {
+    /* background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe4.jpg") !important; */
+    filter: blur(2px);
+    background: cover;
+    background-repeat: no-repeat;
+    padding: 1em;
+  }
+}

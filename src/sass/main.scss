@@ -1,0 +1,65 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+
+@import "components/bg-video";
+@import "components/button";
+@import "components/card";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/story";
+@import "components/form";
+@import "components/popup";
+
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+@import "layout/navbar";
+
+@import "pages/home";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: gray;
+  padding: 30px;
+}
+
+.ItemsList {
+  background: gray;
+  padding-bottom: 20vh;
+}
+
+.content {
+  background-color: #aba387 !important;
+}
+
+#menuCard {
+  background-color: #e28c05 !important;
+}
+
+#submitOrderButtons {
+  margin-top: 2em !important;
+}
+
+#menuList {
+  background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe1.jpg");
+  background-size: cover;
+}
+
+#menuListItem {
+  opacity: 0.95;
+  width: 40%;
+  text-align: center;
+}
