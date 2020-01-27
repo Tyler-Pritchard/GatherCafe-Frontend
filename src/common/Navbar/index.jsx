@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import GoogleAuth from "../../Components/GoogleAuth";
-import { ReactComponent as CartIcon} from '../../Icons/SVG/cart.svg'
+import { ReactComponent as CartIcon} from '../../Images/Icons/SVG/cart.svg';
 
 import {
   Button,
@@ -54,7 +54,7 @@ class DesktopContainer extends Component {
                 <Link to="/">
                   <img
                     className="navbar__logo"
-                    src={"/images/logo-black-small.jpg"}
+                    src={"../../Images/Logos/logo-black-small.jpg"}
                     alt="Galvanize Home"
                      />
                 </Link>

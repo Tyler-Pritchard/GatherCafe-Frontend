@@ -49,13 +49,13 @@ class MobileContainer extends Component {
     const { sidebarOpened } = this.state;
 
     return (
-      <div className="footer__mobile-menu"
+      <Responsive className="footer__mobile-menu"
         as={Sidebar.Pushable}
         getWidth={getWidth}
         maxWidth={Responsive.onlyMobile.maxWidth}
       >
         <Sidebar.Pusher dimmed={sidebarOpened}>{children}</Sidebar.Pusher>
-      </div>
+      </Responsive>
     );
   }
 }
@@ -77,28 +77,31 @@ ResponsiveContainer.propTypes = {
 
 const Footer = () => (
   <ResponsiveContainer>
-    <Segment className="footer">
-      <Container className="footer__navigation">
+    <Segment>
+      <Container className="footer">
         <Grid divided stackable className="footer__list">
           <Grid.Row>
+
             <Grid.Column width={5}>
               <List link className="footer_list">
-                <List.Item as="a" className="footer_item">Sitemap</List.Item>
-                <List.Item as="a" className="footer_item">Contact Us</List.Item>
-                <List.Item as="a" className="footer_item">Terms of service</List.Item>
-                <List.Item as="a" className="footer_item">Privacy policy</List.Item>
+                <List.Item as="null" className="footer_item">Sitemap</List.Item>
+                <List.Item as="null" className="footer_item">Contact Us</List.Item>
+                <List.Item as="null" className="footer_item">Terms of service</List.Item>
+                <List.Item as="null" className="footer_item">Privacy policy</List.Item>
               </List>
             </Grid.Column>
+
             <Grid.Column width={5}>
               <List className="footer_list" link>
-                <List.Item as="a" className="footer__link">Business Catering</List.Item>
-                <List.Item as="a" className="footer__link">
+                <List.Item as="null" className="footer__link">Business Catering</List.Item>
+                <List.Item as="null" className="footer__link">
                 <Link to="/menu">Menu List</Link>
                 </List.Item>
-                <List.Item as="a" className="footer__link">Locaton</List.Item>
-                <List.Item as="a" className="footer__link">Galvanize Home</List.Item>
+                <List.Item as="null" className="footer__link">Locaton</List.Item>
+                <List.Item as="null" className="footer__link">Galvanize Home</List.Item>
               </List>
             </Grid.Column>
+
             <Grid.Column width={5}>
               <h5 className="footer__address">
                 Galvanize<br />
@@ -107,6 +110,7 @@ const Footer = () => (
                 (415) 805-1888
               </h5>
             </Grid.Column>
+
           </Grid.Row>
         </Grid>
       </Container>

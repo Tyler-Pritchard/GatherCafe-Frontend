@@ -8,8 +8,8 @@
     height: 100%;
     width: 100%;
     background-position: relative;
-    padding: 8rem;
-    margin: 1rem;
+    padding: 1rem;
+   
 
     &__header {
     height: 75vh;
@@ -17,6 +17,6 @@
     padding: 8rem;
     margin: 1rem;
     opacity: .95;
-    border: 4px dashed blue;
+    border: 1rem ridge white;
     }
   }

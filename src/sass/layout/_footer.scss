@@ -1,42 +1,17 @@
 .footer {
-    background-color: $color-grey-dark-3;
     padding: 10rem 0;
-    font-size: 1.4rem;
-    color: $color-grey-light-1;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 1000;
+    border-top: 1px solid $color-grey-dark;
+    padding-top: 2rem;
+    display: inline-block;
 
+    @include respond(tab-port) {
+        width: 100%;
+        text-align: center;
+    }
 
     @include respond(tab-port) {
         padding: 8rem 0;
-    }
-
-    &__logo-box {
-        text-align: center;
-        margin-bottom: 8rem;
-
-        @include respond(tab-port) {
-            margin-bottom: 6rem;
-        }
-    }
-
-    &__logo {
-        width: 15rem;
-        height: auto;
-    }
-
-    &__navigation {
-        border-top: 1px solid $color-grey-dark;
-        padding-top: 2rem;
-        display: inline-block;
-
-        @include respond(tab-port) {
-            width: 100%;
-            text-align: center;
-        }
     }
 
     &__list {
@@ -52,6 +27,8 @@
 
     &__link {
         border: 1px solid green;
+        
+
 
         &:link,
         &:visited {
@@ -85,10 +62,6 @@
 
     &__address{
         text-align: center;
-    }
-
-    &__mobile-menu {
-        height: 10%;
-        position: absolute;
+        color: black;
     }
 }
