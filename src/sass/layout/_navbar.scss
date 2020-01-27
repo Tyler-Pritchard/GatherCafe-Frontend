@@ -4,6 +4,16 @@
   padding: 1rem;
   font-size: 1.1rem;
 
+
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+  }
+
+  & > *:hover {
+    background-color: $color-primary-dark;
+  }
+
   &__container {
       height: 7rem;
       display: flex;
@@ -47,12 +57,19 @@
   &__buttons {
     background-color: $color-primary-light;
     border: 3px ridge brown;
-    padding: 1rem;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-
+  
   &__button {
     border: none;
-
+    background-color: $color-primary-dark;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid brown;
+    
     &:focus {
       outline: none;
     }
@@ -69,7 +86,6 @@
   &__cart {
     border: 1px dashed blue;
     margin-right: 10rem;
-    
   }
   
   &__cart-icon {

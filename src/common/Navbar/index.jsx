@@ -60,6 +60,11 @@ class DesktopContainer extends Component {
                 </Link>
                 </div>
               
+              <div className="navbar__menu">
+                <Link to="/catering">
+                  Catering
+                </Link>
+              </div>
 
               <div className="navbar__menu">
                 <Link to="/menu">
@@ -67,27 +72,20 @@ class DesktopContainer extends Component {
                 </Link>
               </div>
 
-              <div className="navbar__menu">
-                <Link to="/catering">
-                  Catering
-                </Link>
-              </div>
-
-
-              <div className="navbar__buttons">
-                <Button 
-                  className="navbar__buton"
+              <section className="navbar__buttons">
+                <div 
+                  className="navbar__button"
                   >
                   <Link to="/login">Log in</Link>
-                </Button>
+                </div>
 
-                <Button
+                <div
                   className="navbar__button"
                 >
                   <Link to="/userprofile">Sign Up</Link>
-                </Button>
+                </div>
 
-              </div>
+              </section>
              
               <div className="navbar__Oauth">
                 <GoogleAuth />
@@ -146,6 +144,8 @@ class MobileContainer extends Component {
           vertical
           visible={sidebarOpened}
         >
+
+
           <div className="navbar__logo-box">
                 <Link to="/">
                   <img
@@ -193,6 +193,9 @@ class MobileContainer extends Component {
               </Menu>
             </Container>
           </Segment>
+
+
+
 
           {children}
         </Sidebar.Pusher>
