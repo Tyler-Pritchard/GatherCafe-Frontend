@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 
 import {
   Container,
-  Grid,
-  List,
   Responsive,
   Segment,
   Sidebar
@@ -79,40 +77,41 @@ const Footer = () => (
   <ResponsiveContainer>
     <Segment>
       <Container className="footer">
-        <Grid divided stackable className="footer__list">
-          <Grid.Row>
 
-            <Grid.Column width={5}>
-              <List link className="footer_list">
-                <List.Item as="null" className="footer_item">Sitemap</List.Item>
-                <List.Item as="null" className="footer_item">Contact Us</List.Item>
-                <List.Item as="null" className="footer_item">Terms of service</List.Item>
-                <List.Item as="null" className="footer_item">Privacy policy</List.Item>
-              </List>
-            </Grid.Column>
+        <div className="footer__logo-box">
+          <img 
+            src={"../../Images/Logos/logo-black-medium.jpg"}
+            className="footer__logo"
+            alt="Galvanize"
+          />
+        </div>
 
-            <Grid.Column width={5}>
-              <List className="footer_list" link>
-                <List.Item as="null" className="footer__link">Business Catering</List.Item>
-                <List.Item as="null" className="footer__link">
-                <Link to="/menu">Menu List</Link>
-                </List.Item>
-                <List.Item as="null" className="footer__link">Locaton</List.Item>
-                <List.Item as="null" className="footer__link">Galvanize Home</List.Item>
-              </List>
-            </Grid.Column>
+        <div className="row">
 
-            <Grid.Column width={5}>
-              <h5 className="footer__address">
-                Galvanize<br />
-                44 Tehama Street<br />
-                San Francisco, CA 94105<br />
-                (415) 805-1888
-              </h5>
-            </Grid.Column>
+          <div className="col-1-of-2">
+            <div className="footer__navigation">
+              <ul className="footer__list">
+                <li className="footer__item">
+                  <Link to={"/"} className="footer__link">Company</Link>
+                  <Link to={"/"} className="footer__link">Contact Us</Link>
+                  <Link to={"/"} className="footer__link">Careers</Link>
+                  <Link to={"/"} className="footer__link">Privacy</Link>
+                  <Link to={"/"} className="footer__link">Terms</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-          </Grid.Row>
-        </Grid>
+          <div className="col-1-of-2">
+            <p className="footer__copyright">
+              Copyright &copy;  
+              <Link to={"www.tylerrobertpritchard.com"}>
+                Tyler Pritchard, 2020
+              </Link>
+            </p>
+          </div>
+        </div>
+
       </Container>
     </Segment>
   </ResponsiveContainer>
