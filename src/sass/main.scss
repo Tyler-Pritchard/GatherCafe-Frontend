@@ -24,39 +24,5 @@
 @import "layout/navbar";
 
 @import "pages/home";
-@import "pages/menu-list";
 @import "pages/cart";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.ItemsList {
-  background: gray;
-  padding-bottom: 20vh;
-}
-
-.content {
-  background-color: #aba387 !important;
-}
-
-#menuCard {
-  background-color: #e28c05 !important;
-}
-
-#submitOrderButtons {
-  margin-top: 2em !important;
-}
-
-#menuList {
-  background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe1.jpg");
-  background-size: cover;
-}
-
-#menuListItem {
-  opacity: 0.95;
-  width: 40%;
-  text-align: center;
-}
+@import "pages/menuList"

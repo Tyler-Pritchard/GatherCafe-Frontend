@@ -1,0 +1,12 @@
+.menuList {
+    background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe1.jpg");
+    background-size: cover;
+  
+  
+    &__menuList__item {
+        opacity: 0.95;
+        width: 40%;
+        text-align: center;
+    }
+  
+}
