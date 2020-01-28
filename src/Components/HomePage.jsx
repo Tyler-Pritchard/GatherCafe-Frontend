@@ -1,9 +1,6 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { ReactComponent as BackgroundMP4 } from "../Images/Coffee-Twins.mp4";
-import { ReactComponent as BackgroundWebM } from "../Images/Coffee-Twins.webm";
-
 
 import {
   Button,
@@ -22,11 +19,8 @@ const getWidth = () => {
 
 const HomepageHeading = ({ mobile }) => (
   <Container text className="homePage__header">
-    <h1>Welcome to Gather Cafe at Galvanize</h1>
-    <h2>
-      What are you hungry for?
-      </h2>
-    <Button primary size="huge">
+    <h1 className="heading-primary">Welcome to Gather Cafe at Galvanize</h1>
+    <Button className="btn btn--animated btn--orange btn-text">
       <Link to="/menu">Let's Eat!</Link>
       <Icon name="right arrow" />
     </Button>

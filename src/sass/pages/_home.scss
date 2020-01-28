@@ -1,22 +1,25 @@
 .homePage {
     background-image: linear-gradient(
         to left top,
-         rgba(255, 166, 0, 0.7), 
-         rgba(165, 42, 42, 0.7)), 
+         rgb(255, 153, .05), 
+         rgba(165, 42, 42, 0.05)), 
          url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe2.jpg");
     background-size: cover;
     height: 100%;
     width: 100%;
     background-position: relative;
     padding: 1rem;
+    color: $color-black;
+    
    
 
     &__header {
-    height: 75vh;
-    text-align: center;
-    padding: 8rem;
-    margin: 1rem;
-    opacity: .95;
-    border: 1rem ridge white;
+      background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe3.jpg");
+      background-size: cover;
+      text-align: center;
+      padding: 9rem 8rem 7rem 8rem;
+      margin: 3rem;
+      border: 1rem ridge $color-primary-dark;
+      z-index: 10 !important;
     }
   }
