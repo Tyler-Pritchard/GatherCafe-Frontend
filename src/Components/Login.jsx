@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../Images/Logos/logo-black-medium.jpg";
+import { Link } from "react-router-dom";
 import {
   Button,
   Form,
@@ -58,7 +59,8 @@ class Login extends Component {
               </Segment>
             </Form>
             <Message>
-              New to us? <a href="/signup">Sign Up</a>
+              New to us?
+              <Link to="/userprofile">  Sign Up</Link>
             </Message>
           </Grid.Column>
         </Grid>
