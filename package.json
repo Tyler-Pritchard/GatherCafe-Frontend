@@ -1,6 +1,6 @@
 {
   "name": "Gather",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "babel": "^6.23.0",
@@ -56,5 +56,10 @@
     "enzyme-adapter-react-16": "^1.10.0",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2"
-  }
+  },
+  "description": "Gather Cafe Ordering Application",
+  "main": "index.js",
+  "repository": "https://github.com/Tyler-Pritchard/GatherCafe-Frontend.git",
+  "author": "Tyler Pritchard <pritchard.tyler@gmail.com>",
+  "license": "MIT"
 }
