@@ -19,11 +19,8 @@ const getWidth = () => {
 
 const HomepageHeading = ({ mobile }) => (
   <Container text className="homePage__header">
-    <h1>Welcome to Gather Cafe at Galvanize</h1>
-    <h2>
-      What are you hungry for?
-      </h2>
-    <Button primary size="huge">
+    <h1 className="heading-primary">Welcome to Gather Cafe at Galvanize</h1>
+    <Button className="btn btn--animated btn--orange btn-text">
       <Link to="/menu">Let's Eat!</Link>
       <Icon name="right arrow" />
     </Button>
