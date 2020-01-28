@@ -1,8 +1,12 @@
 .card {
-    perspective: 150rem;
-    -moz-perspective: 150rem;
+    perspective: 125rem;
+    -moz-perspective: 125rem;
     position: relative;
-    height: 52rem;
+    height: 50rem;
+
+    &__image {
+        width: 80% !important;
+    }
 
     &__side {
         height: 52rem;
@@ -18,7 +22,7 @@
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--front {
-            background-color: $color-white;
+            background-color: $color-black;
         }
 
         &--back {
@@ -26,14 +30,6 @@
 
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
-            }
-
-            &-2 {
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-            }
-
-            &-3 {
-                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
             }
         }
     }
@@ -48,74 +44,43 @@
 
     &__picture {
         background-size: cover;
-        height: 20rem;
+        height: 35rem;
         background-blend-mode: screen;
         clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 55%, 0 100%);
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
 
         &--1 {
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(#);
         }
-
-        &--2 {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(#);
-        }
-
-        &--3 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(#);
-        }
     }
 
     &__heading {
         font-size: 2.8rem;
         font-weight: 500;
+        line-height: 5rem;
         text-transform: uppercase;
         text-align: center;
         color: $color-primary;
         position: absolute;
-        bottom: 10.5rem;
-        left: 2rem;
+        bottom: 10rem;
+        left: 5rem;
         width: 75%;
     }
 
     &__heading-span {
-        padding: 1rem 1.5rem;
+        padding: 1rem 1rem;
         box-decoration-break: clone;
         -webkit-box-decoration-break: clone;
 
         &--1 {
             background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85))
         }
-
-        &--2 {
-            background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, .85))
-        }
-
-        &--3 {
-            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85))
-        }
     }
 
     &__details {
         padding: 3rem;
-
-        ul {
-            list-style: none;
-            width: 80%;
-            margin: 0 auto;
-
-            li {
-                text-align: center;
-                font-size: 1.5rem;
-                padding: 1rem;
-
-                &:not(:last-child) {
-                    border-bottom: 1px solid $color-grey-light-2;
-                }
-            }
-        }
     }
 
     &__cta {

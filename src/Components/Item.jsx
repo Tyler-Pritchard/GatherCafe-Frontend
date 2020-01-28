@@ -1,22 +1,53 @@
-import React from "react";
+import React, { Component } from "react";
 import { Button } from "semantic-ui-react";
+import { connect } from "react-redux";
+import { removeItemInCart } from "../redux/actions/items";
+
 import LazyImage from "../common/LazyImage";
 
 const Item = props => {
   let { name, description, price, image_url } = props.item;
   return !props.item ? null : (
-    <div class="card">
-        <div class="card__picture">
-        <LazyImage src={image_url} size="large" rounded />
+
+
+    <div className="card">
+
+      <div className="card__side card__side--front">
+        <div className="card__picture card__picture--1">
+          <LazyImage 
+          className="card__image"
+          src={image_url} />
+          &nbsp;
         </div>
-        <div class="card__heading-span">
-          <div class="card__heading">{name}</div>
-          <div class="card__details">{description}</div>
-          <h4>{price}</h4>
+        <h4 className="card__heading">
+          <span className="card__heading-span card__heading-span--1">
+            {name}
+          </span>
+        </h4>
+      </div>
+
+        <div className="card__side card__side--back card__side--back-1">
+          <div className="card__cta">
+            <div className="card__details">
+              <p>{description}</p>
+            </div>
+            <div className="card__price-box">
+              <p className="card__price-value">{price}</p>
+              <Button className="btn" onClick={() => props.add(props.item)}>Add</Button>
+              <Button className="btn" onClick={() => props.removeItemInCart(props.item)}>Remove</Button>
+            </div>
+          </div>
         </div>
-        <Button class="btn" onClick={() => props.add(props.item)}>Add</Button>
+
     </div>
   );
 };
 
-export default Item;
+const select = state => ({
+  itemsInCart: state.cart.itemsInCart
+});
+
+export default connect(
+  select,
+  { removeItemInCart }
+)(Item);

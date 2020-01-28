@@ -27,7 +27,7 @@ class ItemsList extends React.Component {
       }
     });
     return (
-      <div className="ItemsList">
+      <div className="itemsList">
         <Container text>{itemsArray}</Container>
       </div>
     );

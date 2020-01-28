@@ -18,8 +18,8 @@ class MenusList extends React.Component {
           );
         });
     return (
-      <div id="menuList">
-        <Container text id="menuListItem">
+      <div className="menuList">
+        <Container text className="menuList__item">
           {menusArray}
         </Container>
       </div>
