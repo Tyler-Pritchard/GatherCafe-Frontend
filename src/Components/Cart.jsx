@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Image, List } from "semantic-ui-react";
+import { Button, Image } from "semantic-ui-react";
 import { connect } from "react-redux";
 import { removeItemInCart } from "../redux/actions/items";
 import StripeCheckout from "react-stripe-checkout";
@@ -9,12 +9,33 @@ class Cart extends Component {
     totalInCents: null
   };
 
+  calculateSubtotal = () => {
+    let totalInCents = this.props.itemsInCart.reduce((acc, agg) => {
+      return acc + +agg.price;
+    }, 0);
+    totalInCents = totalInCents / 100;
+    return totalInCents.toFixed(2);
+  };
+
+  calculateTax = () => {
+    let totalInCents = this.props.itemsInCart.reduce((acc, agg) => {
+      return acc + +agg.price;
+    }, 0);
+    totalInCents = totalInCents / 100;
+    totalInCents = totalInCents.toFixed(2);
+    let tax = totalInCents * .08;
+    return tax.toFixed(2);
+  }
+
   calculateTotal = () => {
     let totalInCents = this.props.itemsInCart.reduce((acc, agg) => {
       return acc + +agg.price;
     }, 0);
-    return totalInCents / 100;
-  };
+    totalInCents = totalInCents / 100;
+    let tax = totalInCents * .08;
+    let total = tax + totalInCents;
+    return total.toFixed(2);
+  }
 
   onToken = async token => {
     const chargeJSON = await fetch("https://localhost:5000/stripeCharge", {
@@ -32,38 +53,40 @@ class Cart extends Component {
 
   render() {
     return (
-      <List divided verticalAlign="middle">
+      <div className="cart">
         {this.props.itemsInCart.map(item => {
           return (
-            <List.Item>
-              <List.Content floated="right">
-                <Button onClick={() => this.props.removeItemInCart(item)}>
+            <div className="cart__items">
+              <div className="cart__item">
+                <Image className="cart__image" avatar src={item.image_url} />
+              <div className="cart__name">{item.name}</div>
+              <div className="cart__price">${item.price}</div>
+              {/* <div className="cart__quantity">${item.quantity}</div> */}
+              
+                <Button className="btn cart__remove btn--orange"onClick={() => this.props.removeItemInCart(item)}>
                   Remove
                 </Button>
-              </List.Content>
-              <Image avatar src={item.image_url} />
-              <List.Content>{item.name}</List.Content>
-              <List.Content>${item.price}</List.Content>
-              <List.Content>${item.quantity}</List.Content>
-            </List.Item>
+                
+              </div>
+            </div>
           );
         })}
-        <div id="displayTotal">
-          <List.Item>
-            <List.Content>{this.calculateTotal()}</List.Content>
-            <List.Content>$Tax</List.Content>
-            <List.Content>$Total</List.Content>
-            <List.Content floated="right">
-              {/* <Button>Checkout</Button> */}
-              <StripeCheckout
-                token={this.onToken}
-                stripeKey={"pk_test_SAPK0hauZtBaTRT3jC6tD33F"}
-                amount={10000}
-              />
-            </List.Content>
-          </List.Item>
+        <div className="cart__display">
+          <ul className="cart__subtotal">
+            <li className="cart__calculate">Subtotal ${this.calculateSubtotal()}</li>
+            <li className="cart__tax">Tax ${this.calculateTax()}</li>
+            <li className="cart__total">Total ${this.calculateTotal()}</li>
+          </ul>
+          <div className="cart__checkout-button">
+            {/* <Button>Checkout</Button> */}
+            <StripeCheckout
+              token={this.onToken}
+              stripeKey={"pk_test_SAPK0hauZtBaTRT3jC6tD33F"}
+              amount={10000}
+            />
         </div>
-      </List>
+          </div>
+      </div>
     );
   }
 }

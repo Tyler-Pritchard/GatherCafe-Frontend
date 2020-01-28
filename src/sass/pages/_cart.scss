@@ -1,0 +1,86 @@
+.cart {
+    background-image: linear-gradient(
+        to left top,
+         rgb(255, 153, .05), 
+         rgba(165, 42, 42, 0.05)), 
+         url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe2.jpg");
+    background-size: cover;
+    height: 100%;
+    background-position: relative;
+    padding: 2rem;
+    color: $color-black;
+    display: flexbox;
+    align-content: space-around;
+
+    &__items {
+        height: 10rem;
+        font-size: 1.8rem;
+        margin-bottom: 10rem;
+        text-align: center;
+    }
+
+    &__item {
+        margin: 1rem;
+    }
+
+    &__image {
+        margin-top: 1rem;
+    }
+
+    &__name {
+        margin: 1rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        background-color: rgba(128, 128, 128, 0.685);
+    }
+
+    &__price {
+        margin: 1rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        background-color: rgba(128, 128, 128, 0.685);
+
+    }
+    
+    &__quantity {
+        margin: 1rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        background-color: rgba(128, 128, 128, 0.685);
+
+    }
+
+    &__remove {
+        margin-bottom: 2rem;
+    }
+    
+    &__display {
+        text-align: center;
+    }
+    
+    &__subtotal {
+        background-color: rgba(128, 128, 128, 0.685);
+        list-style: none;
+        margin-top: 6rem;
+        margin-bottom: 1rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+    
+    &__calculate {
+        margin: 1rem;
+    }
+    
+    &__tax {
+        margin: 1rem;
+    }
+
+    &__total {
+        margin: 1rem;
+    }
+
+    &__checkout-button {
+
+    }
+
+}
