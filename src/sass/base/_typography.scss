@@ -3,7 +3,7 @@ body {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.7;
-    color: $color-grey-dark;
+    background-color: $color-grey-dark;
 }
   
 
@@ -18,20 +18,17 @@ body {
 
     &--main {
         display: block;
-        font-size: 10rem;
-        font-weight: 500;
-        letter-spacing: 3.5rem;
+        font-size: 2rem;
+        font-weight: 800;
+        color: $color-primary-light;
         animation-name: moveInLeft;
-        animation-duration: 1s;
+        animation-duration: 1.25s;
         animation-timing-function: ease-out;
 
         @include respond(phone) {
             letter-spacing: 1rem;
             font-family: 5rem;
         }
-
-        /* animation-iteration-count: 3; */
-        /* animation-delay: 3s; */
     }
 
     &--sub {

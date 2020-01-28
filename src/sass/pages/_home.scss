@@ -11,7 +11,9 @@
     padding: 1rem;
     color: $color-black;
     
-   
+    &__text {
+      background-color: rgba(99, 83, 83, 0.5);
+    }
 
     &__header {
       background-image: url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe3.jpg");
