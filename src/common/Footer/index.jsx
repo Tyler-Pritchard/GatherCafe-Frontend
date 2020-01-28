@@ -93,11 +93,25 @@ const Footer = () => (
             <div className="footer__navigation">
               <ul className="footer__list">
                 <li className="footer__item">
-                  <Link to={"/"} className="footer__link">Company</Link>
-                  <Link to={"/"} className="footer__link">Contact Us</Link>
-                  <Link to={"/"} className="footer__link">Careers</Link>
-                  <Link to={"/"} className="footer__link">Privacy</Link>
-                  <Link to={"/"} className="footer__link">Terms</Link>
+                  <a 
+                    target="_blank" 
+                    className="footer__link"
+                    href="http://www.galvanize.com"
+                  >
+                    Company
+                  </a>
+                  <a target="_blank" className="footer__link">
+                    Contact Us
+                  </a>
+                  <a target="_blank" className="footer__link">
+                    Careers
+                  </a>
+                  <a target="_blank" className="footer__link">
+                    Privacy
+                  </a>
+                  <a target="_blank" className="footer__link">
+                    Terms
+                  </a>
                 </li>
               </ul>
             </div>
@@ -106,9 +120,11 @@ const Footer = () => (
           <div className="col-1-of-2">
             <p className="footer__copyright">
               Copyright &copy;  
-              <Link to={"www.tylerrobertpritchard.com"}>
-                Tyler Pritchard, 2020
-              </Link>
+              <a 
+              target="_blank" href="https://www.tylerrobertpritchard.com">
+              Tyler Pritchard, 2020
+              </a>
+
             </p>
           </div>
         </div>
