@@ -1,5 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import { Button } from "semantic-ui-react";
+import { connect } from "react-redux";
+import { removeItemInCart } from "../redux/actions/items";
+
 import LazyImage from "../common/LazyImage";
 
 const Item = props => {
@@ -31,7 +34,7 @@ const Item = props => {
             <div className="card__price-box">
               <p className="card__price-value">{price}</p>
               <Button className="btn" onClick={() => props.add(props.item)}>Add</Button>
-              <Button className="btn" onClick={() => props.add(props.item)}>Remove</Button>
+              <Button className="btn" onClick={() => props.removeItemInCart(props.item)}>Remove</Button>
             </div>
           </div>
         </div>
@@ -40,4 +43,11 @@ const Item = props => {
   );
 };
 
-export default Item;
+const select = state => ({
+  itemsInCart: state.cart.itemsInCart
+});
+
+export default connect(
+  select,
+  { removeItemInCart }
+)(Item);
