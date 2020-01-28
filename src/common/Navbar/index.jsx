@@ -3,10 +3,12 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import GoogleAuth from "../../Components/GoogleAuth";
 import { ReactComponent as CartIcon} from '../../Images/Icons/SVG/cart.svg';
+import "../../Images/Logos/logo-black-small.jpg"
 
 import {
   Button,
   Container,
+  Image,
   Icon,
   Menu,
   Responsive,
@@ -52,7 +54,7 @@ class DesktopContainer extends Component {
 
                 <div className="navbar__logo-box">
                 <Link to="/">
-                  <img
+                  <Image
                     className="navbar__logo"
                     src={"../../Images/Logos/logo-black-small.jpg"}
                     alt="Galvanize Home"

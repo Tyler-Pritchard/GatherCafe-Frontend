@@ -25,16 +25,12 @@
 
 @import "pages/home";
 @import "pages/menu-list";
+@import "pages/cart";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  color: gray;
-  padding: 30px;
 }
 
 .ItemsList {

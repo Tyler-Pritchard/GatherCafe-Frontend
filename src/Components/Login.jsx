@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../Images/Logos/logo-black-medium.jpg";
 import {
   Button,
   Form,
@@ -32,7 +33,7 @@ class Login extends Component {
         >
           <Grid.Column style={{ maxWidth: 450 }}>
             <Header as="h2" color="teal" textAlign="center">
-              <Image src="/frontend/Galvanize Logo - Text & Logo  2/Galvanize---Galvanize-Logo---Text-_-Logo.png" />
+              <Image src="../Images/Logos/logo-black-medium.jpg" />
               Log-in to your account
             </Header>
             <Form size="large">
