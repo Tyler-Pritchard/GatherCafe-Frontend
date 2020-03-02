@@ -12,29 +12,27 @@
 
   & > *:hover {
     background-color: $color-primary-dark;
-    transition-duration: 1s;
+    transition-duration: .4s;
   }
 
   &__container {
+    border:  1px solid red;
       height: 7rem;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem;
   }
 
   &__logo-box {
-
+    border: 1px solid blue;
+    float: center;
   }
 
-  &__logo
-  
   &__logo {
-      border: 3px ridge brown;
-      background-color: $color-black;
-      height: 6rem;
-      margin-left: 3rem;
+    border: 1px solid purple;
+    background-color: $color-white;
+    height: 6rem;
 
       &:focus {
         outline: none;
@@ -65,7 +63,7 @@
   &__buttons {
     background-color: $color-primary-light;
     border: 1px ridge brown;
-    padding: .5rem;
+    padding: .4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,8 +72,8 @@
   &__button {
     border: none;
     background-color: $color-primary-dark;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 1.2rem;
+    padding: 1.4rem;
     border: 1px solid brown;
     
     &:focus {
@@ -92,7 +90,7 @@
   }
   
   &__cart {
-    margin-right: 10rem;
+    margin-right: 1rem;
   }
   
   &__cart-icon {
