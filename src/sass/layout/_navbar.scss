@@ -3,7 +3,7 @@
   border: .75rem inset rgba(255, 136, 0, 0.87);
   padding: 1rem;
   font-size: 1.1rem;
-
+  flex: 1;
 
   & > * {
     padding: 0 2rem;
@@ -12,17 +12,23 @@
 
   & > *:hover {
     background-color: $color-primary-dark;
+    transition-duration: 1s;
   }
 
   &__container {
       height: 7rem;
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem 0 1rem 0;
-
-      
+      padding: 1rem;
   }
+
+  &__logo-box {
+
+  }
+
+  &__logo
   
   &__logo {
       border: 3px ridge brown;

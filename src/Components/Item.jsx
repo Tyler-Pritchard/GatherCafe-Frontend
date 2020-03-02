@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Button } from "semantic-ui-react";
 import { connect } from "react-redux";
 import { removeItemInCart } from "../redux/actions/items";

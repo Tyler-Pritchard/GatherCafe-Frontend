@@ -93,25 +93,22 @@ const Footer = () => (
             <div className="footer__navigation">
               <ul className="footer__list">
                 <li className="footer__item">
-                  <a 
-                    target="_blank" 
-                    className="footer__link"
-                    href="http://www.galvanize.com"
+                  <Link to="http://www.galvanize.com" target="_blank" className="footer__link"
                   >
                     Company
-                  </a>
-                  <a target="_blank" className="footer__link">
+                  </Link>
+                  <Link to="http://www.google.com" target="_blank"className="footer__link">
                     Contact Us
-                  </a>
-                  <a target="_blank" className="footer__link">
+                  </Link>
+                  <Link to="https://www.google.com" target="_blank"className="footer__link">
                     Careers
-                  </a>
-                  <a target="_blank" className="footer__link">
+                  </Link>
+                  <Link to="https://www.google.com" target="_blank"className="footer__link">
                     Privacy
-                  </a>
-                  <a target="_blank" className="footer__link">
+                  </Link>
+                  <Link to="https://www.google.com" target="_blank"className="footer__link">
                     Terms
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -120,10 +117,11 @@ const Footer = () => (
           <div className="col-1-of-2">
             <p className="footer__copyright">
               Copyright &copy;  
-              <a 
-              target="_blank" href="https://www.tylerrobertpritchard.com">
-              Tyler Pritchard, 2020
-              </a>
+              <Link 
+                to="https://www.tylerrobertpritchard.com" target="_blank"
+              >  
+                Tyler Pritchard, 2020
+              </Link>
 
             </p>
           </div>
