@@ -24,9 +24,11 @@ import logo from "../../assets/logos/coffee-logo-design-creative-idea-logo-eleme
         >
         <div className="navbar__container">
           <div className="navbar__logo-box">
+            <Link to="/">
             <img src={logo} alt="Logo" className="navbar__logo" loader={<Spinner />} 
             unloader={"Great Cafe Home"}  
             />
+            </Link>
           </div>
             
           <div className="navbar__menu">
