@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../Images/Logos/logo-black-medium.jpg";
 import { Link } from "react-router-dom";
+import logo from "../assets/logos/coffee-logo-design-creative-idea-logo-elements-2.png";
 import {
   Button,
   Form,
@@ -34,7 +35,7 @@ class Login extends Component {
         >
           <Grid.Column style={{ maxWidth: 450 }}>
             <Header as="h2" color="teal" textAlign="center">
-              <Image src="../Images/Logos/logo-black-medium.jpg" />
+              <Image src={logo} />
               Log-in to your account
             </Header>
             <Form size="large">

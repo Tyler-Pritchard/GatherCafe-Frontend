@@ -48,11 +48,11 @@ class Footer extends Component {
 
             <div className="col-1-of-2 footer__copybox">
               <p className="footer__copyright">
-                Copyright &copy;  
+                Copyright &copy;   
                 <Link 
                   to="https://www.tylerrobertpritchard.com" target="_blank"
                 >  
-                  Tyler Pritchard, 2020
+                   Tyler Pritchard, 2020
                 </Link>
 
               </p>

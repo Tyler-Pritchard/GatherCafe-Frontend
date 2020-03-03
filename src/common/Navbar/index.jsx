@@ -42,6 +42,11 @@ import logo from "../../assets/logos/coffee-logo-design-creative-idea-logo-eleme
             </Link>
           </div>
 
+          <div className="navbar__Oauth">
+              <h3 className="navbar__OText">Log in with Google</h3>
+              <GoogleAuth />
+          </div>
+
           <section className="navbar__company">
             <h3>Company Login</h3>
             <div className="navbar__buttons">
@@ -58,10 +63,7 @@ import logo from "../../assets/logos/coffee-logo-design-creative-idea-logo-eleme
               </div>
             </div>
           </section>
-          <div className="navbar__Oauth">
-              <h3 className="navbar__OText">Log in with Google</h3>
-              <GoogleAuth />
-          </div>
+          
           <div className="navbar__cart">
             <Link to="/cart">
                 <svg className="navbar__cart-icon">

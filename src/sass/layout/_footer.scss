@@ -1,5 +1,6 @@
 .footer {
     background-color: $color-grey-light-2;
+    background-image: linear-gradient($color-grey-light-1 0%, $color-grey-dark-3 100%);
     color: $color-grey-light-1;
     font-size: 1.4rem;
     text-align: center;
@@ -63,6 +64,7 @@
     &__copybox {
         margin-top: 2rem;
         border: .4rem outset $color-black;
+        box-shadow: 0 .5rem .5rem( $color-grey-dark-3,);
     }
     &__copyright {
         padding: .5rem;

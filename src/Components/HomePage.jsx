@@ -21,12 +21,12 @@ const HomepageHeading = ({ mobile }) => (
   <Container text className="homePage__header">
     <span className="heading-primary--main">
       <div className="homePage__text">
-      Welcome to Generic Cafe
+      Welcome to Some Kinda Cafe
       </div>
     </span>
     <Button className="btn btn--animated btn--orange btn-text">
       
-      <Link to="/menu">Let's Eat!</Link>
+      <Link to="/menu">Order Here!</Link>
       <Icon name="right arrow" />
     </Button>
   </Container>
