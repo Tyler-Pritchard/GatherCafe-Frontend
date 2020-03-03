@@ -1,7 +1,7 @@
 .homePage {
     background-image: linear-gradient(
         to left top,
-         rgb(255, 153, .05), 
+         $color-primary-dark 0%, 
          rgba(165, 42, 42, 0.05)), 
          url("https://s3.us-east-2.amazonaws.com/gather-stock/cafe2.jpg");
     background-size: cover;

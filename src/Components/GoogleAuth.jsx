@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { signIn, signOut } from "../redux/actions";
+import { Button } from 'semantic-ui-react';
 
 class GoogleAuth extends React.Component {
   componentDidMount() {
@@ -49,10 +50,10 @@ class GoogleAuth extends React.Component {
       );
     } else {
       return (
-        <button onClick={this.onSignInClick} className="ui red google button">
+        <Button onClick={this.onSignInClick} className="ui red google button">
           <i className="google icon" />
           Sign In with Google
-        </button>
+        </Button>
       );
     }
   }

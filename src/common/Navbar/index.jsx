@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import GoogleAuth from "../../Components/GoogleAuth";
 import { ReactComponent as CartIcon} from '../../Images/Icons/SVG/cart.svg';
-import Img from 'react-image';
 import Spinner from '../Spinner';
 import logo from "../../assets/logos/coffee-logo-design-creative-idea-logo-elements-2.png";
 

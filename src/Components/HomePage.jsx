@@ -21,7 +21,7 @@ const HomepageHeading = ({ mobile }) => (
   <Container text className="homePage__header">
     <span className="heading-primary--main">
       <div className="homePage__text">
-      Welcome to Gather Cafe at Galvanize
+      Welcome to Generic Cafe
       </div>
     </span>
     <Button className="btn btn--animated btn--orange btn-text">
