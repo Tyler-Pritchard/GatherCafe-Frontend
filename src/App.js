@@ -42,7 +42,7 @@ class App extends Component {
             component={() => <ItemsList meal="6" />}
           />
           <Route exact path="/userprofile" component={() => <UserProfile />} />
-          <Route exact path="/cart" component={Cart} />
+          <Route exact path="/cart" component={() => <Cart />} />
           <Route exact path="/homepage" component={() => <HomepageLayout />} />
           <Footer />
         </div>
