@@ -4,6 +4,7 @@
     position: relative;
     height: 50rem;
 
+
     &__image {
         width: 80% !important;
     }
@@ -64,7 +65,7 @@
         text-align: center;
         color: $color-primary;
         position: absolute;
-        bottom: 10rem;
+        bottom: 5rem;
         left: 5rem;
         width: 75%;
     }

@@ -25,8 +25,9 @@ const HomepageHeading = ({ mobile }) => (
       </div>
     </span>
     <Button className="btn btn--animated btn--orange btn-text">
-      
-      <Link to="/menu">Order Here!</Link>
+      <Link to="/menu">
+        Order Here!
+      </Link>
       <Icon name="right arrow" />
     </Button>
   </Container>
