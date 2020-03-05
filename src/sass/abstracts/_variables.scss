@@ -20,7 +20,12 @@ $color-white: #fff;
 $color-black: #0A0B0F;
 
 //FONTS
+@font-face {
+    font-family: "CoffeeText";
+    src: url("../../assets/fonts/SparkPlugSerifDemoRegular-m5e9.ttf");
+}
 $default-font-size: 1.6rem;
+$font-primary: 'CoffeeText';
 
 //GRID
 $grid-width: 114rem;

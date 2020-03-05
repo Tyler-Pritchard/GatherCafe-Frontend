@@ -1,5 +1,5 @@
 body {
-    font-family: "Lato", sans-serif;
+    font-family: $font-primary, "Lato", sans-serif;
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.7;
@@ -18,7 +18,8 @@ body {
 
     &--main {
         display: block;
-        font-size: 2rem;
+        font-family: $font-primary;
+        font-size: 6rem;
         font-weight: 800;
         color: $color-primary-light;
         animation-name: moveInLeft;
