@@ -21,10 +21,15 @@ $color-black: #0A0B0F;
 
 //FONTS
 @font-face {
-    font-family: "CoffeeText";
+    font-family: "CoffeeHeader";
     src: url("../../assets/fonts/SparkPlugSerifDemoRegular-m5e9.ttf");
 }
+@font-face {
+    font-family: "CoffeeText";
+    src: url("../../assets/fonts/KgSkinnyLatte-xZY8.ttf");
+}
 $default-font-size: 1.6rem;
+$font-header: "CoffeeHeader";
 $font-primary: 'CoffeeText';
 
 //GRID
