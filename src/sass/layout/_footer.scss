@@ -2,9 +2,10 @@
     background-color: $color-grey-light-2;
     background-image: linear-gradient($color-grey-light-1 0%, $color-grey-dark-3 100%);
     color: $color-grey-light-1;
-    font-size: 1.4rem;
+    font-size: 2.5rem;
     text-align: center;
     padding-top: 2rem;
+    font-family: $font-header;
 
 
     &__logo-box {
@@ -29,8 +30,9 @@
 
     &__list {
         list-style: none;
-        margin-bottom: 2rem;
+        padding: 1rem;
         border: .4rem outset black;
+        margin-bottom: 2rem;
     }
 
     &__item {

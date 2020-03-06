@@ -3,7 +3,8 @@
   background-image: linear-gradient(360deg, $color-primary-dark 0%, $color-primary-light 100%);
   border: .75rem inset $color-primary-light;
   padding: 1.75rem;
-  font-size: 1.1rem;
+  font-size: 1.8rem;
+  font-family: $font-header;
 
   & > * {
     padding: 0 .5rem;
@@ -63,7 +64,7 @@
     text-align: center;
     color: $color-white;
     border: .2rem double $color-tertiary-dark;
-    padding-top: 1rem;
+    padding-top: .7rem;
     box-shadow: .2rem .3rem $color-grey-dark-3;
   }
 
@@ -79,7 +80,7 @@
     border: .15rem double $color-tertiary-dark;
     background-color: $color-primary-light;
     background-image: linear-gradient(280deg, $color-secondary-dark 0%, $color-secondary-light 100%);
-    margin: .5rem;
+    margin: .4rem;
     padding: .3rem;
     box-shadow: .1rem .2rem $color-grey-dark-3;
     
