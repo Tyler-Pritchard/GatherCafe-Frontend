@@ -1,6 +1,6 @@
 # Gather Cafe - Frontend API
 
-Hello and welcome to Gather Cafe! This is the frontend repository for a graphic user interface intended to order food and beverages specifically from the Gather Cafe located in the Galvanize building at 44 Tehama Street in San Francisco, CA. It will display menus, generate orders, process payments, and place the orders with Gather Cafe. Cafe staff will then notify the user when the order has been processed and completed.
+Hello and welcome to my cafe app! It will display menus, generate orders, process payments, and place the orders. Cafe staff will then notify the user when the order has been processed and completed.
 
 ## Getting Started
 
