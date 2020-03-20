@@ -2,11 +2,17 @@
     perspective: 125rem;
     -moz-perspective: 125rem;
     position: relative;
-    height: 50rem;
+    height: 40rem;
     font-family: $font-primary;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
     &__image {
-        width: 80% !important;
+        width: 100%;
+        box-shadow: 0 2rem 5rem rgba(0,0,0,.06);
     }
 
     &__side {
@@ -65,10 +71,8 @@
         text-transform: uppercase;
         text-align: center;
         color: $color-primary;
-        position: absolute;
-        bottom: 5rem;
         left: 5rem;
-        width: 75%;
+
     }
 
     &__heading-span {

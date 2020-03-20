@@ -30,11 +30,11 @@ import logo from "../../assets/logos/coffee-logo-design-creative-idea-logo-eleme
             </Link>
           </div>
             
-          <div className="navbar__menu">
+          {/* <div className="navbar__menu">
             <Link to="/catering">
               Catering
             </Link>
-          </div>
+          </div> */}
 
           <div className="navbar__menu">
             <Link to="/menu">
