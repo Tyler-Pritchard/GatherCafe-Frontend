@@ -1,3 +1,5 @@
+Python backend at: https://github.com/Tyler-Pritchard/Gather-backend
+
 # Gather Cafe - Frontend API
 
 Hello and welcome to my cafe app! It will display menus, generate orders, process payments, and place the orders. Cafe staff will then notify the user when the order has been processed and completed.
