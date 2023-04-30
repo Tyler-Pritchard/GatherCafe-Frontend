@@ -17,7 +17,7 @@
     "react-image": "^2.4.0",
     "react-redux": "^7.0.3",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^3.0.0",
+    "react-scripts": "^5.0.1",
     "react-stripe-checkout": "^2.6.3",
     "react-video-cover": "^1.2.2",
     "redux": "^4.0.5",
@@ -59,7 +59,7 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.2"
+    "webpack-cli": "^3.3.12"
   },
   "description": "Gather Cafe Ordering Application",
   "main": "index.js",
